@@ -1,0 +1,1531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class 8 Physics Ch-8: COMBUSTION, FUELS AND FLAME (దహనం, ఇంధనాలు మరియు మంట) | Jacob Gapp School, Paladugu</title>
+  <!-- Tailwind CSS CDN -->
+  <script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=PXZ6ppdMaEAJHGK2QnDLO93dxykrEqrKyWcUBE-02dNQdPPyVFExPSITJrcB7nHEKsxvN3V0dY-2gA50t49BbylewuG6HL78Xy5b55mpOmHXWUi8HtfcSEM9rMq5nBuN5ax2h0-cKEBQUwxcoA_Ps9zZlHGZXIUQVOV0hZoR-mjsK34NMcnbvXfcbanftA4zcwvczQEgZ4d2MxI2C84-koOyL_EcB8o5s2K9W1aGFsOiI8PndI26q05KR1OYupLqoTSh7nSFO5Fe8Le35PWL9b83LEaK4forSxRCld6lAFk0Snk1FpWUfBrCiBUzD9Oe3XSyQRB2O8MJpjTG7fuFYhbQ9WYSopGBMCH_Wp4Wsd9hXpQMhaci8CrfktXm__TNeDQF-o1EHqKQB6bZm1BuMA" charset="UTF-8"></script><script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts: Inter & Noto Sans Telugu -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Telugu:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'Noto Sans Telugu', 'sans-serif'],
+            telugu: ['Noto Sans Telugu', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; font-size: 17px; }
+    body { font-family: 'Inter', 'Noto Sans Telugu', sans-serif; line-height: 1.8; overflow-x: hidden; overflow-y: auto !important; }
+    .telugu-font { font-family: 'Noto Sans Telugu', sans-serif; line-height: 1.85; }
+
+    /* Non-blocking Elegant Background Watermark */
+    .watermark-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none !important;
+      z-index: 1;
+      opacity: 0.04;
+      background-image: repeating-linear-gradient(
+        -45deg,
+        rgba(234, 88, 12, 0.45) 0px,
+        rgba(234, 88, 12, 0.45) 1.5px,
+        transparent 1.5px,
+        transparent 280px
+      );
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-around;
+      justify-content: space-around;
+      overflow: hidden;
+      user-select: none;
+    }
+    .watermark-text {
+      font-size: 1.35rem;
+      font-weight: 900;
+      color: #9a3412;
+      transform: rotate(-30deg);
+      white-space: nowrap;
+      margin: 40px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      pointer-events: none !important;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #fdba74;
+      border-radius: 9999px;
+    }
+    /* Font sizing */
+    body.font-sm { font-size: 15px; }
+    body.font-md { font-size: 17px; }
+    body.font-lg { font-size: 19px; }
+    body.font-xl { font-size: 21px; }
+  </style>
+</head>
+<body class="bg-orange-50/20 text-slate-800 antialiased min-h-screen flex flex-col font-md selection:bg-orange-100 selection:text-orange-900">
+
+  <!-- ==================== MANDATORY ADMISSION GATE MODAL ==================== -->
+  <div id="admissionModal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border-4 border-orange-600 space-y-6">
+      <div class="text-center space-y-2">
+        <div class="w-14 h-14 rounded-2xl bg-orange-600 text-white flex items-center justify-center text-2xl mx-auto shadow-md">
+          <i class="fa-solid fa-graduation-cap text-amber-200"></i>
+        </div>
+        <span class="text-xs font-black uppercase text-orange-700 tracking-wider">JACOB GAPP SCHOOL, PALADUGU, TELANGANA</span>
+        <h3 class="text-2xl font-black text-slate-900">Student Portal Entry Gate</h3>
+        <p class="text-xs text-slate-600 font-semibold">Please enter your official student credentials to access Chapter 8: Combustion, Fuels and Flame.</p>
+      </div>
+
+      <div class="space-y-4">
+        <div>
+          <label class="block text-xs font-black uppercase text-slate-700 mb-1">Student Full Name (విద్యార్థి పేరు):</label>
+          <input type="text" id="modalStudentName" placeholder="e.g. Bala Swamy / ABS"
+            class="w-full px-4 py-3 rounded-xl border-2 border-slate-300 focus:outline-none focus:border-orange-600 font-bold text-slate-800 text-sm">
+        </div>
+        <div>
+          <label class="block text-xs font-black uppercase text-slate-700 mb-1">Roll Number / Admission No (రోల్ నంబర్):</label>
+          <input type="text" id="modalStudentRoll" placeholder="e.g. JGS-008"
+            class="w-full px-4 py-3 rounded-xl border-2 border-slate-300 focus:outline-none focus:border-orange-600 font-bold text-slate-800 text-sm">
+        </div>
+        <button onclick="submitAdmission()"
+          class="w-full py-3.5 rounded-xl bg-orange-600 hover:bg-orange-700 text-white font-black text-sm shadow-lg transition flex items-center justify-center gap-2">
+          <span>Enter Portal &amp; Start Session</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+      <div class="text-center text-xs text-slate-400 font-bold">
+        Curator &amp; Mentor: Bro. Balaswamy S.M (balaswamysm@gmail.com)
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== BACKGROUND WATERMARK ==================== -->
+  <div class="watermark-overlay" aria-hidden="true">
+    <div class="watermark-text">Bro. Balaswamy S.M • JACOB GAPP SCHOOL, PALADUGU, TELANGANA</div>
+    <div class="watermark-text">Bro. Balaswamy S.M • JACOB GAPP SCHOOL, PALADUGU, TELANGANA</div>
+    <div class="watermark-text">Bro. Balaswamy S.M • JACOB GAPP SCHOOL, PALADUGU, TELANGANA</div>
+    <div class="watermark-text">Bro. Balaswamy S.M • JACOB GAPP SCHOOL, PALADUGU, TELANGANA</div>
+    <div class="watermark-text">Bro. Balaswamy S.M • JACOB GAPP SCHOOL, PALADUGU, TELANGANA</div>
+    <div class="watermark-text">Bro. Balaswamy S.M • JACOB GAPP SCHOOL, PALADUGU, TELANGANA</div>
+    <div class="watermark-text">Bro. Balaswamy S.M • JACOB GAPP SCHOOL, PALADUGU, TELANGANA</div>
+    <div class="watermark-text">Bro. Balaswamy S.M • JACOB GAPP SCHOOL, PALADUGU, TELANGANA</div>
+  </div>
+
+  <!-- ==================== TOP INSTITUTIONAL RIBBON ==================== -->
+  <div class="relative z-20 bg-gradient-to-r from-orange-950 via-orange-900 to-orange-950 text-white text-xs sm:text-sm py-2 px-4 font-bold border-b border-orange-800 shadow-sm">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <i class="fa-solid fa-school text-amber-400"></i>
+        <span class="tracking-wide uppercase font-black text-amber-300">JACOB GAPP SCHOOL, PALADUGU, TELANGANA</span>
+      </div>
+      <div class="flex items-center gap-3 text-orange-200 text-xs font-semibold">
+        <span><i class="fa-solid fa-user-tie text-amber-400 mr-1"></i>Mentor: <strong class="text-white">Bro. Balaswamy S.M</strong></span>
+        <span>•</span>
+        <span><i class="fa-solid fa-envelope text-amber-400 mr-1"></i>balaswamysm@gmail.com</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== STUDENT ATTENDANCE & LIVE SESSION TOOLBAR (NON-BLOCKING) ==================== -->
+  <section class="relative z-20 bg-orange-100/70 border-b-2 border-orange-300 py-3 px-4 shadow-xs">
+    <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-3">
+      <div class="flex items-center gap-3 w-full lg:w-auto">
+        <div class="w-10 h-10 rounded-xl bg-orange-600 text-white flex items-center justify-center text-lg shadow-sm shrink-0">
+          <i class="fa-solid fa-stopwatch"></i>
+        </div>
+        <div>
+          <span class="text-xs font-black uppercase text-orange-950 block tracking-wider">
+            Active Study Session Tracker (సక్రియ విద్యార్థి సమయ నమోదు)
+          </span>
+          <div class="text-xs text-slate-700 flex items-center gap-2">
+            <span>Student: <strong id="displayStudentName" class="text-slate-900 font-black">--</strong> (Roll: <strong id="displayStudentRoll" class="text-slate-900 font-black">--</strong>)</span>
+            <span>•</span>
+            <span>Time: <strong id="liveSessionTimer" class="font-mono text-emerald-700 font-black text-sm">00:00</strong></span>
+            <span>•</span>
+            <button onclick="openAdmissionModal()" class="text-indigo-600 underline font-bold hover:text-indigo-800 text-xs">Change Student</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Email Report Button -->
+      <div class="flex flex-wrap items-center gap-2 w-full lg:w-auto justify-end">
+        <button onclick="sendReportDirect()" title="Send session details to balaswamysm@gmail.com"
+          class="px-3.5 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-black text-xs shadow-xs transition flex items-center gap-1.5">
+          <i class="fa-solid fa-paper-plane"></i>
+          <span>Email Report to balaswamysm@gmail.com</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== HEADER & TOP INDEX NAVIGATION ==================== -->
+  <header class="sticky top-0 z-30 bg-white/95 backdrop-blur-md border-b-2 border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Brand & Title -->
+        <div class="flex items-center gap-3 sm:gap-4">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-orange-600 to-amber-600 flex items-center justify-center text-white shadow-md">
+            <i class="fa-solid fa-fire text-2xl"></i>
+          </div>
+          <div>
+            <h1 class="font-black text-lg sm:text-2xl text-slate-900 leading-tight">Class 8: COMBUSTION, FUELS AND FLAME</h1>
+            <p class="text-xs sm:text-sm text-orange-700 font-extrabold">SCERT Telangana Chapter 8 (Pages 107–118) • Bro. Balaswamy S.M Portal</p>
+          </div>
+        </div>
+
+        <!-- Text Resizer Controls -->
+        <div class="flex items-center gap-2 sm:gap-4">
+          <div class="flex items-center bg-slate-100 rounded-xl p-1 border border-slate-200 text-xs font-black">
+            <button onclick="changeFontSize('sm')" title="Small Text" class="px-2.5 py-1 rounded hover:bg-white text-slate-700">A-</button>
+            <button onclick="changeFontSize('md')" title="Normal Text" class="px-2.5 py-1 rounded bg-white shadow-xs text-orange-700">A</button>
+            <button onclick="changeFontSize('lg')" title="Large Text" class="px-2.5 py-1 rounded hover:bg-white text-slate-700">A+</button>
+            <button onclick="changeFontSize('xl')" title="Extra Large Text" class="px-2.5 py-1 rounded hover:bg-white text-slate-700">A++</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Anchor Navigation Bar -->
+      <nav class="flex items-center gap-2 py-2.5 overflow-x-auto custom-scrollbar text-xs sm:text-sm font-extrabold whitespace-nowrap border-t border-slate-200">
+        <a href="#overview" class="px-3.5 py-1.5 rounded-xl bg-slate-100 hover:bg-orange-100 text-slate-800 transition">
+          <i class="fa-solid fa-compass mr-1.5 text-orange-600"></i>Overview
+        </a>
+        <a href="#pageByPage" class="px-3.5 py-1.5 rounded-xl bg-slate-100 hover:bg-orange-100 text-slate-800 transition">
+          <i class="fa-solid fa-book-open mr-1.5 text-orange-600"></i>Pages 107-116 Sections
+        </a>
+        <a href="#eightyPoints" class="px-3.5 py-1.5 rounded-xl bg-orange-600 text-white hover:bg-orange-700 transition shadow-xs">
+          <i class="fa-solid fa-list-ol mr-1.5 text-amber-200"></i>80 Key Concepts (Telugu)
+        </a>
+        <a href="#eightyGlossary" class="px-3.5 py-1.5 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-800 transition border border-emerald-300">
+          <i class="fa-solid fa-spell-check mr-1.5 text-emerald-600"></i>80 Glossary Terms &amp; Sentences
+        </a>
+        <a href="#improveYourLearning" class="px-3.5 py-1.5 rounded-xl bg-amber-50 hover:bg-amber-100 text-amber-900 transition border border-amber-300">
+          <i class="fa-solid fa-clipboard-question mr-1.5 text-amber-600"></i>Improve Your Learning (Full)
+        </a>
+        <a href="#suggestedExperiments" class="px-3.5 py-1.5 rounded-xl bg-sky-50 hover:bg-sky-100 text-sky-900 transition border border-sky-300">
+          <i class="fa-solid fa-flask-vial mr-1.5 text-sky-600"></i>Suggested Experiments
+        </a>
+        <a href="#projectWorks" class="px-3.5 py-1.5 rounded-xl bg-teal-50 hover:bg-teal-100 text-teal-900 transition border border-teal-300">
+          <i class="fa-solid fa-diagram-project mr-1.5 text-teal-600"></i>Project Works
+        </a>
+        <a href="#flameStructure" class="px-3.5 py-1.5 rounded-xl bg-rose-50 hover:bg-rose-100 text-rose-900 transition border border-rose-300">
+          <i class="fa-solid fa-fire-flame-curved mr-1.5 text-rose-600"></i>Flame &amp; Calorific Marvels
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==================== MAIN CONTENT CONTAINER ==================== -->
+  <main class="relative z-10 flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-12">
+
+    <!-- HERO SECTION BANNER -->
+    <section id="overview" class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-orange-950 via-slate-900 to-orange-950 text-white p-6 sm:p-10 shadow-2xl border-2 border-orange-600">
+      <div class="relative z-10 max-w-4xl space-y-4">
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-black bg-amber-400 text-slate-950 shadow">
+            <i class="fa-solid fa-award"></i> JACOB GAPP SCHOOL, PALADUGU
+          </span>
+          <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-extrabold bg-orange-500/30 text-orange-100 border border-orange-400/30">
+            <i class="fa-solid fa-user-check"></i> Curator: Bro. Balaswamy S.M
+          </span>
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-400/30">
+            <i class="fa-solid fa-lock-open"></i> Full Document Unlocked
+          </span>
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-black tracking-tight leading-tight">
+          Physical Sciences - Chapter 8: COMBUSTION, FUELS AND FLAME <span class="text-amber-300">(దహనం, ఇంధనాలు మరియు మంట)</span>
+        </h2>
+        <p class="text-base sm:text-lg text-orange-100 leading-relaxed font-normal">
+          An interactive, mobile-friendly bilingual master learning portal covering SCERT Class 8 Chapter 8 (Pages 107–118). Master combustion processes, combustible &amp; non-combustible materials, oxygen necessity tests, ignition temperatures, types of combustion (rapid, spontaneous, explosion), calorific values, fire extinguishing mechanisms ($CO_2$), flame structures (dark, luminous, non-luminous zones), 80 master concepts with Telugu explanations, 80 glossary terms, all textbook exercises solved, and laboratory experiment reports.
+        </p>
+      </div>
+    </section>
+
+    <!-- SEARCH & FILTER TOOLBAR -->
+    <div class="bg-white rounded-2xl p-5 shadow-sm border-2 border-slate-200 flex flex-col md:flex-row gap-4 items-center justify-between">
+      <div class="relative w-full md:w-96">
+        <i class="fa-solid fa-magnifying-glass absolute left-4 top-3.5 text-slate-400 text-base"></i>
+        <input type="text" id="universalSearchInput" onkeyup="filterContent()" placeholder="Search combustion, fuels, flame, Telugu words..."
+          class="w-full pl-11 pr-4 py-3 rounded-xl border-2 border-slate-200 focus:outline-none focus:ring-2 focus:ring-orange-600 focus:border-orange-600 text-base font-semibold">
+      </div>
+      <div class="flex flex-wrap items-center gap-2 w-full md:w-auto justify-end text-xs sm:text-sm font-bold text-slate-700">
+        <span>Language Display:</span>
+        <button onclick="toggleLang('both')" id="btnBoth" class="px-3.5 py-2 rounded-xl bg-orange-600 text-white shadow-xs">English + తెలుగు</button>
+        <button onclick="toggleLang('en')" id="btnEn" class="px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800">English Only</button>
+        <button onclick="toggleLang('te')" id="btnTe" class="px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800">తెలుగు మాత్రమే</button>
+      </div>
+    </div>
+
+    <!-- ==================== SECTION 1: DETAILED PAGE-BY-PAGE CHAPTER BREAKDOWN ==================== -->
+    <section id="pageByPage" class="space-y-8">
+      <div class="border-b-2 border-slate-200 pb-3">
+        <h3 class="text-2xl sm:text-3xl font-black text-slate-900 flex items-center gap-3">
+          <i class="fa-solid fa-book-bookmark text-orange-600"></i>
+          Exhaustive Page-by-Page Chapter Breakdown (పేజీల వారీగా సమగ్ర పాఠ్యాంశం)
+        </h3>
+        <p class="text-sm text-slate-500 font-semibold mt-1">Class 8 Physical Sciences SCERT Chapter 8: Pages 107 to 116 with bilingual summaries &amp; tables.</p>
+      </div>
+
+      <!-- PAGES 107 to 116 CARDS -->
+      <div class="space-y-6">
+
+        <!-- Page 107 -->
+        <article class="page-block bg-white rounded-3xl p-6 sm:p-8 shadow-sm border-2 border-slate-200 space-y-4">
+          <div class="flex flex-wrap items-center justify-between border-b pb-3 border-slate-200 gap-2">
+            <span class="font-black text-sm uppercase text-orange-800 bg-orange-50 border border-orange-200 px-3.5 py-1 rounded-full">
+              📄 Page 107: Introduction, Combustion &amp; Activity-1 (Combustible Materials)
+            </span>
+            <span class="text-xs text-slate-400 font-bold">Class 8 SCERT Chapter 8</span>
+          </div>
+          <div class="grid md:grid-cols-2 gap-5 leading-relaxed">
+            <div class="lang-en bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-2">
+              <strong class="text-orange-900 block font-black text-base">English Text (107.1):</strong>
+              <p>We use various fuels (wood, coal, cow dung, kerosene, LPG) for domestic and industrial cooking. Candles or kerosene lamps provide light during power outages.</p>
+              <p><strong>Activity-1:</strong> Testing various materials (paper, charcoal, magnesium ribbon, wood, cloth, pebbles, water) to determine which burn and which do not. A chemical process in which a substance reacts with oxygen to generate heat is called <strong>combustion</strong>.</p>
+            </div>
+            <div class="lang-te bg-orange-50/50 p-5 rounded-2xl border border-orange-100 telugu-font space-y-2 text-orange-950">
+              <strong class="text-orange-900 block font-black text-base">తెలుగు సమగ్ర వివరణ (107.1):</strong>
+              <p>ఇళ్లలో వంట చేయడానికి కట్టెలు, బొగ్గు, పేడ పిడకలు, కెరోసిన్, ఎల్పీజీలను ఇంధనాలుగా వాడతాం. విద్యుత్ లేనప్పుడు కొవ్వొత్తి లేదా లాంతరు వెలుగును వాడతాం.</p>
+              <p><strong>కృత్యం-1:</strong> కాగితం, బొగ్గు, మెగ్నీషియం పట్టీ, చెక్క, రాయి వంటి వివిధ పదార్థాలను మంటలో ఉంచి ఏవి మండుతాయి, ఏవి మందవు అని పరిశీలించడం. పదార్థం ఆక్సిజన్‌తో చర్య జరిపి ఉష్ణాన్ని వెలువడే రసాయన ప్రక్రియను <strong>దహనం (Combustion)</strong> అంటారు.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Page 108 -->
+        <article class="page-block bg-white rounded-3xl p-6 sm:p-8 shadow-sm border-2 border-slate-200 space-y-4">
+          <div class="flex flex-wrap items-center justify-between border-b pb-3 border-slate-200 gap-2">
+            <span class="font-black text-sm uppercase text-orange-800 bg-orange-50 border border-orange-200 px-3.5 py-1 rounded-full">
+              📄 Page 108: Combustible vs. Non-Combustible &amp; Activity-2 (Tumbler Test)
+            </span>
+            <span class="text-xs text-slate-400 font-bold">Air Necessity for Burning</span>
+          </div>
+          <div class="grid md:grid-cols-2 gap-5 leading-relaxed">
+            <div class="lang-en bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-2">
+              <strong class="text-orange-900 block font-black text-base">English Text (108.1):</strong>
+              <p>Materials that burn are <strong>combustible</strong> (paper, petrol, wood); those that do not burn are <strong>non-combustible</strong> (pebbles, water, glass).</p>
+              <p><strong>Activity-2:</strong> Placing an inverted glass tumbler over a burning candle cuts off air supply; the candle flickers and the flame goes off, proving that air is required for combustion.</p>
+            </div>
+            <div class="lang-te bg-orange-50/50 p-5 rounded-2xl border border-orange-100 telugu-font space-y-2 text-orange-950">
+              <strong class="text-orange-900 block font-black text-base">తెలుగు సమగ్ర వివరణ (108.1):</strong>
+              <p>మండే పదార్థాలను <strong>దహనశీల పదార్థాలు</strong> (కాగితం, పెట్రోల్) అని, మందని వాటిని <strong>దహనశీల కాని పదార్థాలు</strong> (రాయి, నీరు) అంటారు.</p>
+              <p><strong>కృత్యం-2:</strong> వెలుగుతున్న కొవ్వొత్తిపై గాజు గ్లాసు బోర్లించినప్పుడు గాలి అందక మంట ఆరిపోతుంది. దీనిని బట్టి దహన ప్రక్రియకు గాలి (ఆక్సిజన్) అత్యంత అవసరమని నిరూపితమవుతుంది.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Page 109 -->
+        <article class="page-block bg-white rounded-3xl p-6 sm:p-8 shadow-sm border-2 border-slate-200 space-y-4">
+          <div class="flex flex-wrap items-center justify-between border-b pb-3 border-slate-200 gap-2">
+            <span class="font-black text-sm uppercase text-orange-800 bg-orange-50 border border-orange-200 px-3.5 py-1 rounded-full">
+              📄 Page 109: Lab Activity - Proving Oxygen Helps in Burning (KMnO4)
+            </span>
+            <span class="text-xs text-slate-400 font-bold">Incense Stick &amp; Potassium Permanganate</span>
+          </div>
+          <div class="grid md:grid-cols-2 gap-5 leading-relaxed">
+            <div class="lang-en bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-2">
+              <strong class="text-orange-900 block font-black text-base">English Text (109.1):</strong>
+              <p><strong>Lab Activity:</strong> Heating potassium permanganate ($KMnO_4$) in a test tube releases oxygen gas. When a glowing incense stick (agarbatti) stub is inserted into the test tube, it bursts into a bright flame, demonstrating that oxygen actively supports combustion.</p>
+            </div>
+            <div class="lang-te bg-orange-50/50 p-5 rounded-2xl border border-orange-100 telugu-font space-y-2 text-orange-950">
+              <strong class="text-orange-900 block font-black text-base">తెలుగు సమగ్ర వివరణ (109.1):</strong>
+              <p><strong>ప్రయోగశాల కృత్యం:</strong> పొటాషియం పర్మాంగనేట్ ($KMnO_4$) ను పరీక్ష నాళికలో వేడి చేస్తే ఆక్సిజన్ వాయువు విడుదలవుతుంది. కాంతిలేకుండా ఎర్రగా కాలుతున్న అగరుబత్తిని ఆ నాళికలో ఉంచితే అది ప్రకాశవంతమైన మంటతో మండుతుంది. దీని ద్వారా ఆక్సిజన్ దహనానికి తోడ్పడుతుందని రుజువవుతుంది.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Page 110 -->
+        <article class="page-block bg-white rounded-3xl p-6 sm:p-8 shadow-sm border-2 border-slate-200 space-y-4">
+          <div class="flex flex-wrap items-center justify-between border-b pb-3 border-slate-200 gap-2">
+            <span class="font-black text-sm uppercase text-orange-800 bg-orange-50 border border-orange-200 px-3.5 py-1 rounded-full">
+              📄 Page 110: Ignition Temperature &amp; Activity-3 (Sun Rays &amp; Paper)
+            </span>
+            <span class="text-xs text-slate-400 font-bold">Magnifying Lens Focus</span>
+          </div>
+          <div class="grid md:grid-cols-2 gap-5 leading-relaxed">
+            <div class="lang-en bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-2">
+              <strong class="text-orange-900 block font-black text-base">English Text (110.1):</strong>
+              <p><strong>Ignition Temperature:</strong> The lowest temperature at which a substance catches fire. Different substances have different ignition temperatures.</p>
+              <p><strong>Activity-3:</strong> Focusing sun rays with a magnifying lens onto a piece of paper quickly raises its temperature to its ignition point, causing it to burn.</p>
+            </div>
+            <div class="lang-te bg-orange-50/50 p-5 rounded-2xl border border-orange-100 telugu-font space-y-2 text-orange-950">
+              <strong class="text-orange-900 block font-black text-base">తెలుగు సమగ్ర వివరణ (110.1):</strong>
+              <p><strong>జ్వలన ఉష్ణోగ్రత (Ignition Temperature):</strong> ఏదైనా పదార్థం మంటను అంటించుకోవడానికి కావలసిన అతి తక్కువ ఉష్ణోగ్రతను జ్వలన ఉష్ణోగ్రత అంటారు.</p>
+              <p><strong>కృత్యం-3:</strong> బిళ్ళ లెన్స్ (Magnifying glass) ద్వారా సూర్యకిరణాలను కాగితంపై కేంద్రీకరిస్తే, కాగితం ఉష్ణోగ్రత జ్వలన స్థానానికి చేరి తక్షణమే మండుతుంది.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Page 111 -->
+        <article class="page-block bg-white rounded-3xl p-6 sm:p-8 shadow-sm border-2 border-slate-200 space-y-4">
+          <div class="flex flex-wrap items-center justify-between border-b pb-3 border-slate-200 gap-2">
+            <span class="font-black text-sm uppercase text-orange-800 bg-orange-50 border border-orange-200 px-3.5 py-1 rounded-full">
+              📄 Page 111: Inflammable Substances, Activity-4 (Paper Cup) &amp; Safety Matches
+            </span>
+            <span class="text-xs text-slate-400 font-bold">Water in Paper Vessel</span>
+          </div>
+          <div class="grid md:grid-cols-2 gap-5 leading-relaxed">
+            <div class="lang-en bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-2">
+              <strong class="text-orange-900 block font-black text-base">English Text (111.1):</strong>
+              <p><strong>Inflammable Substances:</strong> Materials with very low ignition temperature that catch fire easily (petrol, alcohol, LPG).</p>
+              <p><strong>Activity-4 (Paper Cup):</strong> Heating a paper cup filled with water does not burn the paper because heat is transferred to water, keeping paper below its ignition point.</p>
+            </div>
+            <div class="lang-te bg-orange-50/50 p-5 rounded-2xl border border-orange-100 telugu-font space-y-2 text-orange-950">
+              <strong class="text-orange-900 block font-black text-base">తెలుగు సమగ్ర వివరణ (111.1):</strong>
+              <p><strong>అత్యంత దహనశీల పదార్థాలు (Inflammable):</strong> తక్కువ జ్వలన ఉష్ణోగ్రత కలిగి సులభంగా మంటను అంటుకునే పదార్థాలు (పెట్రోల్, ఆల్కహాల్, ఎల్పీజీ).</p>
+              <p><strong>కృత్యం-4 (కాగితపు కప్పు):</strong> నీరు నింపిన కాగితపు కప్పును మంటపై ఉంచితే నీరు వేడిని గ్రహించి కాగితం జ్వలన ఉష్ణోగ్రతకు చేరకుండా ఆపుతుంది, కాబట్టి కాగితం కందదు.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Page 112 -->
+        <article class="page-block bg-white rounded-3xl p-6 sm:p-8 shadow-sm border-2 border-slate-200 space-y-4">
+          <div class="flex flex-wrap items-center justify-between border-b pb-3 border-slate-200 gap-2">
+            <span class="font-black text-sm uppercase text-orange-800 bg-orange-50 border border-orange-200 px-3.5 py-1 rounded-full">
+              📄 Page 112: Types of Combustion (Rapid, Spontaneous, Explosion) &amp; Table 2
+            </span>
+            <span class="text-xs text-slate-400 font-bold">Fuels Classification</span>
+          </div>
+          <div class="grid md:grid-cols-2 gap-5 leading-relaxed">
+            <div class="lang-en bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-2">
+              <strong class="text-orange-900 block font-black text-base">English Text (112.1):</strong>
+              <ol class="list-decimal pl-4 space-y-1">
+                <li><strong>Rapid Combustion:</strong> Gas burns rapidly with heat and light (LPG stove, spirit).</li>
+                <li><strong>Spontaneous Combustion:</strong> Material bursts into flames without external spark (forest dry grass fire, phosphorus ignition).</li>
+                <li><strong>Explosion:</strong> Sudden reaction with heat, light, sound, and gas (fireworks, crackers).</li>
+              </ol>
+            </div>
+            <div class="lang-te bg-orange-50/50 p-5 rounded-2xl border border-orange-100 telugu-font space-y-2 text-orange-950">
+              <strong class="text-orange-900 block font-black text-base">తెలుగు సమగ్ర వివరణ (112.1):</strong>
+              <ol class="list-decimal pl-4 space-y-1">
+                <li><strong>శీఘ్ర దహనం (Rapid Combustion):</strong> గ్యాస్ స్టవ్ వెలిగించిన వెంటనే వేగంగా మండి ఉష్ణ, కాంతులను ఇవ్వడం.</li>
+                <li><strong>స్వయం దహనం (Spontaneous Combustion):</strong> బాహ్య కారణం లేకుండానే అకస్మాత్తుగా మంటలు అంటుకోవడం (ఎండకాలం అడవుల్లో గడ్డి అంటుకోవడం).</li>
+                <li><strong>స్ఫోటనం లేదా పేలుడు (Explosion):</strong> టపాసులు పేలినప్పుడు శబ్దం, కాంతి, ఉష్ణం ఒక్కసారిగా వెలువడటం.</li>
+              </ol>
+            </div>
+          </div>
+        </article>
+
+        <!-- Page 113 -->
+        <article class="page-block bg-white rounded-3xl p-6 sm:p-8 shadow-sm border-2 border-slate-200 space-y-4">
+          <div class="flex flex-wrap items-center justify-between border-b pb-3 border-slate-200 gap-2">
+            <span class="font-black text-sm uppercase text-orange-800 bg-orange-50 border border-orange-200 px-3.5 py-1 rounded-full">
+              📄 Page 113: Calorific Value Table &amp; Fire Control Principles
+            </span>
+            <span class="text-xs text-slate-400 font-bold">Hydrogen Calorific Value (150,000 kJ/kg)</span>
+          </div>
+          <div class="grid md:grid-cols-2 gap-5 leading-relaxed">
+            <div class="lang-en bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-2">
+              <strong class="text-orange-900 block font-black text-base">English Text (113.1):</strong>
+              <p><strong>Calorific Value:</strong> The amount of heat energy produced on complete combustion of 1 kg of a fuel (measured in kJ/kg). Hydrogen has the highest calorific value (150,000 kJ/kg).</p>
+              <p><strong>Fire Control:</strong> Eliminating any of the three factors (fuel, oxygen supply, high temperature) extinguishes fire.</p>
+            </div>
+            <div class="lang-te bg-orange-50/50 p-5 rounded-2xl border border-orange-100 telugu-font space-y-2 text-orange-950">
+              <strong class="text-orange-900 block font-black text-base">తెలుగు సమగ్ర వివరణ (113.1):</strong>
+              <p><strong>కెలోరిఫిక్ విలువ (Calorific Value):</strong> 1 కిలోగ్రాముల ఇంధనం పూర్తిగా దహనం చెందినప్పుడు వెలువడే ఉష్ణ శక్తి పరిమాణం (kJ/kg). అన్నింటికంటే హైడ్రోజన్ అత్యధిక కెలోరిఫిక్ విలువను (1,50,000 kJ/kg) కలిగి ఉంది.</p>
+              <p><strong>అగ్నిప్రమాద నియంత్రణ:</strong> ఇంధనం, ఆక్సిజన్ సరఫరా, జ్వలన ఉష్ణోగ్రత - ఈ మూడింటిలో దేనిని తొలగించినా మంటను అణచివేయవచ్చు.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Page 114 -->
+        <article class="page-block bg-white rounded-3xl p-6 sm:p-8 shadow-sm border-2 border-slate-200 space-y-4">
+          <div class="flex flex-wrap items-center justify-between border-b pb-3 border-slate-200 gap-2">
+            <span class="font-black text-sm uppercase text-orange-800 bg-orange-50 border border-orange-200 px-3.5 py-1 rounded-full">
+              📄 Page 114: Fire Extinguishers (Water &amp; Carbon Dioxide $CO_2$) &amp; Activity-5
+            </span>
+            <span class="text-xs text-slate-400 font-bold">Why Water Fails on Oil/Electrical Fires</span>
+          </div>
+          <div class="grid md:grid-cols-2 gap-5 leading-relaxed">
+            <div class="lang-en bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-2">
+              <strong class="text-orange-900 block font-black text-base">English Text (114.1):</strong>
+              <p>Water cools fires below ignition temperature, but <strong>cannot</strong> be used for electrical fires (conducts electricity) or oil/petrol fires (water sinks, oil floats and keeps burning).</p>
+              <p><strong>Carbon Dioxide ($CO_2$):</strong> Best for electrical and oil fires because it is heavier than oxygen, blankets the fire, and lowers temperature.</p>
+            </div>
+            <div class="lang-te bg-orange-50/50 p-5 rounded-2xl border border-orange-100 telugu-font space-y-2 text-orange-950">
+              <strong class="text-orange-900 block font-black text-base">తెలుగు సమగ్ర వివరణ (114.1):</strong>
+              <p>నీరు మంటలను చల్లార్చుతుంది, కానీ విద్యుత్ అపాయాలు మరియు పెట్రోల్/ఆయిల్ అగ్నిప్రమాదాలకు నీటిని వాడకూడదు (నూనె తేలుతుంది, నీరు మునుగుతుంది). ఆయిల్ మరియు విద్యుత్ అగ్నిప్రమాదాలకు <strong>కార్బన్ డై ఆక్సైడ్ ($CO_2$)</strong> సిలిండర్లు ఉత్తమమైనవి.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Page 115 -->
+        <article class="page-block bg-white rounded-3xl p-6 sm:p-8 shadow-sm border-2 border-slate-200 space-y-4">
+          <div class="flex flex-wrap items-center justify-between border-b pb-3 border-slate-200 gap-2">
+            <span class="font-black text-sm uppercase text-orange-800 bg-orange-50 border border-orange-200 px-3.5 py-1 rounded-full">
+              📄 Page 115: Structure of a Flame (Zones) &amp; Activity-6 &amp; 7
+            </span>
+            <span class="text-xs text-slate-400 font-bold">Fig-7 (Dark, Luminous, Non-Luminous Zones)</span>
+          </div>
+          <div class="grid md:grid-cols-2 gap-5 leading-relaxed">
+            <div class="lang-en bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-2">
+              <strong class="text-orange-900 block font-black text-base">English Text (115.1):</strong>
+              <p>A candle flame has three main zones:</p>
+              <ol class="list-decimal pl-4 space-y-1">
+                <li><strong>Dark Zone (Innermost):</strong> Least hot, unburnt wax vapors.</li>
+                <li><strong>Luminous Zone (Middle):</strong> Moderately hot, yellow, incomplete combustion with carbon soot deposition.</li>
+                <li><strong>Non-Luminous Zone (Outermost):</strong> Hottest part, blue color, complete combustion due to rich oxygen supply.</li>
+              </ol>
+            </div>
+            <div class="lang-te bg-orange-50/50 p-5 rounded-2xl border border-orange-100 telugu-font space-y-2 text-orange-950">
+              <strong class="text-orange-900 block font-black text-base">తెలుగు సమగ్ర వివరణ (115.1):</strong>
+              <p>కొవ్వొత్తి మంటలో మూడు ప్రధాన వಲಯాలు ఉంటాయి:</p>
+              <ol class="list-decimal pl-4 space-y-1">
+                <li><strong>చీకటి వలయం (అంతర్భాగం):</strong> అత్యంత తక్కువ ఉష్ణోగ్రత, మంట లేని మైనపు ఆవిర్లు.</li>
+                <li><strong>కాంతివంతమైన వలయం (మధ్య భాగం):</strong> పసుపు రంగు, అసంపూర్ణ దహనం, మసి (కార్బన్ కణాలు) ఏర్పడే ప్రాంతం.</li>
+                <li><strong>కాంతిహీన వలయం (బహిర్భాగం):</strong> అత్యంత వేడైన నీలి రంగు భాగం, సంపూర్ణ దహనం జరిగే అత్యష్ణ ప్రదేశం.</li>
+              </ol>
+            </div>
+          </div>
+        </article>
+
+        <!-- Page 116 Summary -->
+        <article class="page-block bg-white rounded-3xl p-6 sm:p-8 shadow-sm border-2 border-slate-200 space-y-4">
+          <div class="flex flex-wrap items-center justify-between border-b pb-3 border-slate-200 gap-2">
+            <span class="font-black text-sm uppercase text-orange-800 bg-orange-50 border border-orange-200 px-3.5 py-1 rounded-full">
+              📄 Page 116: Copper Wire Test &amp; What We Have Learnt Summary
+            </span>
+            <span class="text-xs text-slate-400 font-bold">Review Points</span>
+          </div>
+          <div class="grid md:grid-cols-2 gap-5 leading-relaxed text-sm">
+            <div class="lang-en bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-1.5">
+              <strong class="text-orange-900 block font-black text-base">Key Summary Points:</strong>
+              <ul class="list-disc pl-4 space-y-1">
+                <li>Combustion requires oxygen, fuel, and ignition temperature.</li>
+                <li>Calorific value is heat produced by 1 kg of fuel (kJ/kg).</li>
+                <li>Non-luminous zone is the hottest part of a candle flame.</li>
+              </ul>
+            </div>
+            <div class="lang-te bg-orange-50/50 p-5 rounded-2xl border border-orange-100 telugu-font space-y-1.5 text-orange-950">
+              <strong class="text-orange-900 block font-black text-base">ముఖ్య సారాంశ సూత్రాలు:</strong>
+              <ul class="list-disc pl-4 space-y-1">
+                <li>దహనానికి ఆక్సిజన్, ఇంధనం మరియు జ్వలన ఉష్ణోగ్రత తప్పనిసరి.</li>
+                <li>1 కిలో ఇంధనం దహనంతో వచ్చే ఉష్ణమే కెలోరిఫిక్ విలువ.</li>
+                <li>కొవ్వొత్తి మంటలో వెలుతురు లేని నీలి రంగు ప్రాంతమే అత్యంత వేడైన భాగం.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 2: 80 MASTER KEY CONCEPTS ==================== -->
+    <section id="eightyPoints" class="space-y-6">
+      <div class="flex flex-col md:flex-row md:items-center justify-between border-b-2 border-slate-200 pb-3 gap-2">
+        <div>
+          <h3 class="text-2xl sm:text-3xl font-black text-slate-900 flex items-center gap-3">
+            <i class="fa-solid fa-list-check text-orange-600"></i>
+            80 Master Key Points with Long Telugu Explanations &amp; Real-Life Examples
+          </h3>
+          <p class="text-sm text-slate-500 font-semibold">80 దహనం, ఇంధనాలు మరియు మంట శాస్త్రీయ అంశాలు - సమగ్ర వివరణలతో</p>
+        </div>
+        <span class="text-xs font-black bg-orange-600 text-white px-3.5 py-1.5 rounded-full self-start md:self-auto">
+          Points 1 to 80 Complete
+        </span>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5" id="eightyPointsContainer">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 3: 80 GLOSSARY TERMS ==================== -->
+    <section id="eightyGlossary" class="space-y-6">
+      <div class="flex flex-col md:flex-row md:items-center justify-between border-b-2 border-slate-200 pb-3 gap-2">
+        <div>
+          <h3 class="text-2xl sm:text-3xl font-black text-slate-900 flex items-center gap-3">
+            <i class="fa-solid fa-book-atlas text-emerald-600"></i>
+            80 Scientific Combustion Glossary Terms with Contextual Sentences
+          </h3>
+          <p class="text-sm text-slate-500 font-semibold">80 దహన శాస్త్ర పదాలు - ఆంగ్ల &amp; తెలుగు వాక్య ప్రయోగాలతో</p>
+        </div>
+        <span class="text-xs font-black bg-emerald-100 text-emerald-800 px-3.5 py-1.5 rounded-full self-start md:self-auto">
+          80 Terms &amp; Examples
+        </span>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5" id="glossaryContainer">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 4: EXHAUSTIVE "IMPROVE YOUR LEARNING" EXERCISES (Pages 116-118) ==================== -->
+    <section id="improveYourLearning" class="space-y-8">
+      <div class="border-b-2 border-slate-200 pb-3">
+        <h3 class="text-2xl sm:text-3xl font-black text-slate-900 flex items-center gap-3">
+          <i class="fa-solid fa-graduation-cap text-amber-600"></i>
+          Complete "Improve Your Learning" Exercises (Pages 116–118 Solved)
+        </h3>
+        <p class="text-sm text-slate-500 font-semibold mt-1">Every textbook question from Reflections on Concepts, Applications, HOTs, and MCQs fully solved with AS tags.</p>
+      </div>
+
+      <!-- Part I: Reflections on Concepts -->
+      <div class="space-y-6">
+        <h4 class="text-lg font-black text-orange-900 bg-orange-50 border-l-4 border-orange-600 px-4 py-2 rounded-r-xl">
+          I. Reflections on Concepts (భావనలపై ప్రతిస్పందనలు - Page 116)
+        </h4>
+
+        <!-- Q1 -->
+        <div class="exercise-item bg-white p-6 rounded-3xl border-2 border-slate-200 shadow-sm space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-black bg-orange-100 text-orange-900 px-3 py-1 rounded-full">Reflections on Concepts - Q1 (AS1)</span>
+            <button onclick="readAloud('Give four examples of combustible materials.')" class="text-slate-400 hover:text-orange-600 text-sm">
+              <i class="fa-solid fa-volume-high"></i>
+            </button>
+          </div>
+          <h5 class="text-base font-extrabold text-slate-900">Q1: Give four examples of combustible materials. (AS1)</h5>
+          <p class="text-sm font-bold text-orange-700 telugu-font">ప్రశ్న 1: దహనశీల పదార్థాలకు నాలుగు ఉదాహరణలు ఇవ్వండి.</p>
+
+          <div class="grid md:grid-cols-2 gap-4 text-sm leading-relaxed">
+            <div class="lang-en bg-slate-50 p-4 rounded-2xl border border-slate-200">
+              <strong class="text-slate-800 block mb-1">Answer (English):</strong>
+              Four examples of combustible materials (materials that catch fire easily and burn) are:
+              <ol class="list-decimal pl-4 space-y-1 mt-1">
+                <li>Paper</li>
+                <li>Wood</li>
+                <li>LPG (Liquefied Petroleum Gas)</li>
+                <li>Petrol</li>
+              </ol>
+            </div>
+            <div class="lang-te bg-orange-50/50 p-4 rounded-2xl border border-orange-100 telugu-font text-orange-950">
+              <strong class="text-orange-900 block mb-1">సమాధానం (తెలుగు):</strong>
+              దహనశీల పదార్థాలకు (సులభంగా మంటను అంటుకునే పదార్థాలకు) నాలుగు ఉదాహరణలు:
+              <ol class="list-decimal pl-4 space-y-1 mt-1">
+                <li>కాగితం (Paper)</li>
+                <li>చెక్క / కట్టెలు (Wood)</li>
+                <li>ఎల్‌పీజీ గ్యాస్ (LPG)</li>
+                <li>పెట్రోల్ (Petrol)</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="exercise-item bg-white p-6 rounded-3xl border-2 border-slate-200 shadow-sm space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-black bg-orange-100 text-orange-900 px-3 py-1 rounded-full">Reflections on Concepts - Q2 (AS1)</span>
+          </div>
+          <h5 class="text-base font-extrabold text-slate-900">Q2: Why should not we store spirit or petrol near our living place? (AS1)</h5>
+          <p class="text-sm font-bold text-orange-700 telugu-font">ప్రశ్న 2: స్పిరిట్ లేదా పెట్రోల్‌ను మన నివాస ప్రాంతాల దగ్గర ఎందుకు నిల్వ చేయకూడదు?</p>
+
+          <div class="grid md:grid-cols-2 gap-4 text-sm leading-relaxed">
+            <div class="lang-en bg-slate-50 p-4 rounded-2xl border border-slate-200">
+              <strong class="text-slate-800 block mb-1">Answer (English):</strong>
+              Spirit and petrol are <strong>inflammable substances</strong> with extremely low ignition temperatures. They evaporate rapidly at room temperature and release inflammable vapours. Even a tiny spark or accidental flame nearby can instantly ignite these vapours, causing catastrophic fires and explosions. Hence, storing them near living quarters is extremely dangerous.
+            </div>
+            <div class="lang-te bg-orange-50/50 p-4 rounded-2xl border border-orange-100 telugu-font text-orange-950">
+              <strong class="text-orange-900 block mb-1">సమాధానం (తెలుగు):</strong>
+              స్పిరిట్ మరియు పెట్రోల్ అనేవి అతి తక్కువ జ్వలన ఉష్ణోగ్రత గల <strong>అత్యంత దహనశీల పదార్థాలు (Inflammable substances)</strong>. ఇవి గది ఉష్ణోగ్రత వద్ద కూడా వేగంగా ఆవిరిగా మారుతాయి. చిన్న నిప్పు రవ్వ తగిలినా ఇవి క్షణంలో మంటలను అంటుకుని భారీ అగ్నిప్రమాదాలు సృష్టిస్తాయి. అందుకే వీటిని నివాస ప్రాంతాల వద్ద ఉంచడం చాలా ప్రమాదకరం.
+            </div>
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="exercise-item bg-white p-6 rounded-3xl border-2 border-slate-200 shadow-sm space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-black bg-orange-100 text-orange-900 px-3 py-1 rounded-full">Reflections on Concepts - Q3 (AS2)</span>
+          </div>
+          <h5 class="text-base font-extrabold text-slate-900">Q3: The oil fires should not be sprayed with water. Why? (AS2)</h5>
+          <p class="text-sm font-bold text-orange-700 telugu-font">ప్రశ్న 3: నూనె లేదా పెట్రోల్ వల్ల జరిగే అగ్నిప్రమాదాలపై నీటిని ఎందుకు చల్లకూడదు?</p>
+
+          <div class="grid md:grid-cols-2 gap-4 text-sm leading-relaxed">
+            <div class="lang-en bg-slate-50 p-4 rounded-2xl border border-slate-200">
+              <strong class="text-slate-800 block mb-1">Answer (English):</strong>
+              Water is heavier than oil. When sprayed on an oil or petrol fire, water sinks straight to the bottom while the burning oil floats on top and continues to burn. Furthermore, water may splatter the burning oil droplets, causing the fire to spread rapidly. Therefore, carbon dioxide ($CO_2$) or foam extinguishers must be used instead.
+            </div>
+            <div class="lang-te bg-orange-50/50 p-4 rounded-2xl border border-orange-100 telugu-font text-orange-950">
+              <strong class="text-orange-900 block mb-1">సమాధానం (తెలుగు):</strong>
+              నూనె లేదా పెట్రోల్ నీటి కంటే తేలికైనవి. ఆయిల్ మంటలపై నీరు చల్లితే నీరు బరువుగా ఉండటం వల్ల కిందకి వెళుతుంది, మండుతున్న నూనె నీటిపై తేలి అలాగే మండుతూ ఉంటుంది. అంతేకాక మండుతున్న నూనె తుంపర్లు నలుదిక్కులా చిమ్మి మంట మరింత వేగంగా వ్యాపిస్తుంది. అందుకే ఆయిల్ మంటలపై నీరు వాడకూడదు.
+            </div>
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="exercise-item bg-white p-6 rounded-3xl border-2 border-slate-200 shadow-sm space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-black bg-orange-100 text-orange-900 px-3 py-1 rounded-full">Reflections on Concepts - Q4 (AS1)</span>
+          </div>
+          <h5 class="text-base font-extrabold text-slate-900">Q4: Water is not used to control fires involving electrical equipment. Why? (AS1)</h5>
+          <p class="text-sm font-bold text-slate-700 telugu-font">ప్రశ్న 4: విద్యుత్ పరికరాల వల్ల జరిగే అగ్నిప్రమాదాలను అణచడానికి నీటిని ఎందుకు ఉపయోగించరు?</p>
+
+          <div class="grid md:grid-cols-2 gap-4 text-sm leading-relaxed">
+            <div class="lang-en bg-slate-50 p-4 rounded-2xl border border-slate-200">
+              <strong class="text-slate-800 block mb-1">Answer (English):</strong>
+              Ordinary tap water contains dissolved salts and minerals, making it a good conductor of electricity. If water is sprayed onto live electrical equipment on fire, it can conduct electric current back to the person trying to douse the fire, resulting in a fatal electric shock. Hence, non-conducting $CO_2$ extinguishers are required.
+            </div>
+            <div class="lang-te bg-orange-50/50 p-4 rounded-2xl border border-orange-100 telugu-font text-orange-950">
+              <strong class="text-orange-900 block mb-1">సమాధానం (తెలుగు):</strong>
+              సాధారణ నీటిలో లవణాలు కరిగి ఉండటం వల్ల అది విద్యుత్‌ను ప్రసరింపజేస్తుంది (మంచి వాహకం). విద్యుత్ పరికరాలకు అంటుకున్న మంటలపై నీరు చల్లితే విద్యుత్ ప్రవాహం నీటి ద్వారా వచ్చి మంటను ఆర్పే వ్యక్తికి ప్రాణాంతక షాక్ ఇస్తుంది. అందువల్ల విద్యుత్ అగ్నిప్రమాదాలకు నీరు వాడరు.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Part II: Application of Concepts -->
+      <div class="space-y-6">
+        <h4 class="text-lg font-black text-orange-900 bg-orange-50 border-l-4 border-orange-600 px-4 py-2 rounded-r-xl">
+          II. Application of Concepts (భావనల అనువర్తనం - Page 116)
+        </h4>
+
+        <!-- App Q1 -->
+        <div class="exercise-item bg-white p-6 rounded-3xl border-2 border-slate-200 shadow-sm space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-black bg-orange-100 text-orange-900 px-3 py-1 rounded-full">Application of Concepts - Q1 (AS1)</span>
+          </div>
+          <h5 class="text-base font-extrabold text-slate-900">Q1: What precautions are to be taken while pouring water on fire? (AS1)</h5>
+          <p class="text-sm font-bold text-orange-700 telugu-font">ప్రశ్న 1: మంటలపై నీరు పోసేటప్పుడు తీసుకోవాల్సిన జాగ్రత్తలు ఏమిటి?</p>
+
+          <div class="grid md:grid-cols-2 gap-4 text-sm leading-relaxed">
+            <div class="lang-en bg-slate-50 p-4 rounded-2xl border border-slate-200">
+              <strong class="text-slate-800 block mb-1">Answer (English):</strong>
+              Precautions before pouring water on fire:
+              <ul class="list-disc pl-4 space-y-1 mt-1">
+                <li>Ensure the fire is not caused by electricity (turn off electric mains first).</li>
+                <li>Ensure the fire is not fueled by oil, petrol, or grease (where water causes spreading).</li>
+                <li>Use water primarily for ordinary combustible solids like wood, paper, and cloth.</li>
+              </ul>
+            </div>
+            <div class="lang-te bg-orange-50/50 p-4 rounded-2xl border border-orange-100 telugu-font text-orange-950">
+              <strong class="text-orange-900 block mb-1">సమాధానం (తెలుగు):</strong>
+              మంటలపై నీరు పోసేటప్పుడు ఈ జాగ్రత్తలు తీసుకోవాలి:
+              <ul class="list-disc pl-4 space-y-1 mt-1">
+                <li>ఆ అగ్నిప్రమాదం విద్యుత్ షార్ట్ సర్క్యూట్ వల్ల రాలేదని నిర్ధారించుకోవాలి (ముందుగా మెయిన్ స్విచ్ ఆఫ్ చేయాలి).</li>
+                <li>మంటలు పెట్రోల్, డీజిల్ లేదా నూనె వల్ల రాలేదని చూసుకోవాలి (నూనె మంటలపై నీరు పోస్తే వ్యాపిస్తుంది).</li>
+                <li>కట్టెలు, కాగితం, గుడ్డలు వంటి సాధారణ వస్తువుల మంటలపై మాత్రమే నీటిని వాడాలి.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- App Q2 -->
+        <div class="exercise-item bg-white p-6 rounded-3xl border-2 border-slate-200 shadow-sm space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-black bg-orange-100 text-orange-900 px-3 py-1 rounded-full">Application of Concepts - Q2 (AS1)</span>
+          </div>
+          <h5 class="text-base font-extrabold text-slate-900">Q2: Give an example of a good fuel. How do you choose that fuel? Explain. (AS1)</h5>
+          <p class="text-sm font-bold text-orange-700 telugu-font">ప్రశ్న 2: మంచి ఇంధనానికి ఒక ఉదాహరణ ఇవ్వండి. ఆ ఇంధనాన్ని నీవు ఎలా ఎంచుకుంటావు? వివరించండి.</p>
+
+          <div class="grid md:grid-cols-2 gap-4 text-sm leading-relaxed">
+            <div class="lang-en bg-slate-50 p-4 rounded-2xl border border-slate-200">
+              <strong class="text-slate-800 block mb-1">Answer (English):</strong>
+              <strong>LPG (Liquefied Petroleum Gas)</strong> is an example of a good domestic fuel. Criteria for choosing a good fuel:
+              <ul class="list-disc pl-4 space-y-1 mt-1">
+                <li>High calorific value (produces large amount of heat).</li>
+                <li>Easy availability and reasonable cost.</li>
+                <li>Easy to store and transport safely.</li>
+                <li>Burns smoothly at a moderate rate without leaving harmful smoke or ash (low pollution).</li>
+              </ul>
+            </div>
+            <div class="lang-te bg-orange-50/50 p-4 rounded-2xl border border-orange-100 telugu-font text-orange-950">
+              <strong class="text-orange-900 block mb-1">సమాధానం (తెలుగు):</strong>
+              <strong>ఎల్‌పీజీ (LPG - గ్యాస్)</strong> మంచి ఇంధనానికి చక్కని ఉదాహరణ. మంచి ఇంధనాన్ని ఎన్నుకునే ప్రమాణాలు:
+              <ul class="list-disc pl-4 space-y-1 mt-1">
+                <li>అధిక కెలోరిఫిక్ విలువ కలిగి ఎక్కువ ఉష్ణాన్ని ఇవ్వాలి.</li>
+                <li>సులభంగా లభించాలి మరియు ధర అందుబాటులో ఉండాలి.</li>
+                <li>భద్రపరచడానికి మరియు రవాణా చేయడానికి సురక్షితంగా ఉండాలి.</li>
+                <li>ఎటువంటి బూడిద, పొగను వెలువరించకుండా తక్కువ కాలుష్యంతో మంటను ఇవ్వాలి.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- App Q3 -->
+        <div class="exercise-item bg-white p-6 rounded-3xl border-2 border-slate-200 shadow-sm space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-black bg-orange-100 text-orange-900 px-3 py-1 rounded-full">Application of Concepts - Q3 (AS2)</span>
+          </div>
+          <h5 class="text-base font-extrabold text-slate-900">Q3: It is difficult to burn a heap of green leaves but not a heap of dry leaves. Explain why? (AS2)</h5>
+          <p class="text-sm font-bold text-orange-700 telugu-font">ప్రశ్న 3: పచ్చి ఆకుల కుప్పను మంట అంటించడం కష్టం, కానీ ఎండిన ఆకుల కుప్ప సులభంగా మండుతుంది. ఎందుకు?</p>
+
+          <div class="grid md:grid-cols-2 gap-4 text-sm leading-relaxed">
+            <div class="lang-en bg-slate-50 p-4 rounded-2xl border border-slate-200">
+              <strong class="text-slate-800 block mb-1">Answer (English):</strong>
+              Green leaves contain a large amount of moisture (water). When heat is applied, a significant portion of thermal energy is consumed in evaporating this water content, preventing the leaves from reaching their ignition temperature. In contrast, dry leaves contain no moisture, so they attain their low ignition point almost instantly and catch fire easily.
+            </div>
+            <div class="lang-te bg-orange-50/50 p-4 rounded-2xl border border-orange-100 telugu-font text-orange-950">
+              <strong class="text-slate-900 block mb-1">సమాధానం (తెలుగు):</strong>
+              పచ్చి ఆకులలో నీటి శాతం (తేమ) ఎక్కువగా ఉంటుంది. మంట పెట్టినప్పుడు ఆ నీరు ఆవిరి కావడానికి ఎక్కువ ఉష్ణం ఖర్చవుతుంది, ఫలితంగా ఆకులు తమ జ్వలన ఉష్ణోగ్రతకు చేరుకోలేవు. కానీ ఎండిన ఆకులలో తేమ ఉండదు కాబట్టి అవి తక్షణమే జ్వలన ఉష్ణోగ్రతను పొంది సులభంగా మండుతాయి.
+            </div>
+          </div>
+        </div>
+
+        <!-- App Q4 -->
+        <div class="exercise-item bg-white p-6 rounded-3xl border-2 border-slate-200 shadow-sm space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-black bg-orange-100 text-orange-900 px-3 py-1 rounded-full">Application of Concepts - Q4 (AS7)</span>
+          </div>
+          <h5 class="text-base font-extrabold text-slate-900">Q4: Where do you find spontaneous combustion and rapid combustion in your daily life? (AS7)</h5>
+          <p class="text-sm font-bold text-orange-700 telugu-font">ప్రశ్న 4: మన నిత్యజీవితంలో స్వయం దహనం (Spontaneous combustion) మరియు శీఘ్ర దహనం (Rapid combustion) ఎక్కడెక్కడ చూస్తాం?</p>
+
+          <div class="grid md:grid-cols-2 gap-4 text-sm leading-relaxed">
+            <div class="lang-en bg-slate-50 p-4 rounded-2xl border border-slate-200">
+              <strong class="text-slate-800 block mb-1">Answer (English):</strong>
+              <ul class="list-disc pl-4 space-y-1">
+                <li><strong>Spontaneous Combustion:</strong> Forest fires breaking out spontaneously in dry summer grass due to intense heat; phosphorus catching fire on its own when exposed to air at room temperature.</li>
+                <li><strong>Rapid Combustion:</strong> LPG burning instantly when a match is brought near the gas stove knob; spirit or petrol burning rapidly upon receiving a tiny spark.</li>
+              </ul>
+            </div>
+            <div class="lang-te bg-orange-50/50 p-5 rounded-2xl border border-orange-100 telugu-font text-orange-950">
+              <strong class="text-orange-900 block mb-1">సమాధానం (తెలుగు):</strong>
+              <ul class="list-disc pl-4 space-y-1">
+                <li><strong>స్వయం దహనం (Spontaneous combustion):</strong> ఎండకాలంలో అడవుల్లో ఎండిన గడ్డి దానంతట అదే అంటుకోవడం; గాలిలో ఉంచిన తెల్ల ఫాస్పరస్ దానంతట అదే మంటలంటుకోవడం.</li>
+                <li><strong>శీఘ్ర దహనం (Rapid combustion):</strong> గ్యాస్ స్టవ్ నాబ్ తిప్పి అగ్గిపుల్ల వెలిగించగానే గ్యాస్ తక్షణమే మంటలతో మరగడం; పెట్రోల్ లేదా స్పిరిట్‌కు నిప్పు అంటగానే వేగంగా మంటలు రావటం.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Part III: Higher Order Thinking Questions (HOTs) -->
+      <div class="space-y-6">
+        <h4 class="text-lg font-black text-orange-900 bg-orange-50 border-l-4 border-orange-600 px-4 py-2 rounded-r-xl">
+          III. Higher Order Thinking Questions (HOTs - Page 116)
+        </h4>
+
+        <!-- HOTs Q1 -->
+        <div class="exercise-item bg-white p-6 rounded-3xl border-2 border-slate-200 shadow-sm space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-black bg-orange-100 text-orange-900 px-3 py-1 rounded-full">HOTs - Q1 (AS1)</span>
+          </div>
+          <h5 class="text-base font-extrabold text-slate-900">Q1: Why is phosphorus preserved in water? (AS1)</h5>
+          <p class="text-sm font-bold text-orange-700 telugu-font">ప్రశ్న 1: ఫాస్పరస్‌ను నీటిలో ఎందుకు భద్రపరుస్తారు?</p>
+
+          <div class="grid md:grid-cols-2 gap-4 text-sm leading-relaxed">
+            <div class="lang-en bg-slate-50 p-4 rounded-2xl border border-slate-200">
+              <strong class="text-slate-800 block mb-1">Answer (English):</strong>
+              White phosphorus has an extremely low ignition temperature (around $30^\circ	ext{C}$). If kept exposed to air at room temperature, it catches fire spontaneously. To prevent direct contact with atmospheric oxygen and avoid accidental fires, white phosphorus is always immersed and stored under water.
+            </div>
+            <div class="lang-te bg-orange-50/50 p-4 rounded-2xl border border-orange-100 telugu-font text-orange-950">
+              <strong class="text-orange-900 block mb-1">సమాధానం (తెలుగు):</strong>
+              తెల్ల ఫాస్పరస్ జ్వలన ఉష్ణోగ్రత చాలా తక్కువగా ఉంటుంది (సుమారు $30^\circ	ext{C}$). గది ఉష్ణోగ్రత వద్ద దీనిని గాలిలో ఉంచితే అది దానంతట అదే మంటలంటుకుంటుంది (స్వయం దహనం). గాలిలోని ఆక్సిజన్‌తో సంబంధం లేకుండా అగ్నిప్రమాదాలను నివారించడానికి దీనిని నీటిలో ముంచి భద్రపరుస్తారు.
+            </div>
+          </div>
+        </div>
+
+        <!-- HOTs Q2 -->
+        <div class="exercise-item bg-white p-6 rounded-3xl border-2 border-slate-200 shadow-sm space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-black bg-orange-100 text-orange-900 px-3 py-1 rounded-full">HOTs - Q2 (AS7)</span>
+          </div>
+          <h5 class="text-base font-extrabold text-slate-900">Q2: How do you feel about “Fuels have become a part of human life”? (AS7)</h5>
+          <p class="text-sm font-bold text-orange-700 telugu-font">ప్రశ్న 2: “ఇంధనాలు మానవ జీవితంలో భాగమైపోయాయి” అనే అంశంపై మీ అభిప్రాయం ఏమిటి?</p>
+
+          <div class="grid md:grid-cols-2 gap-4 text-sm leading-relaxed">
+            <div class="lang-en bg-slate-50 p-4 rounded-2xl border border-slate-200">
+              <strong class="text-slate-800 block mb-1">Answer (English):</strong>
+              It is an absolute truth. From cooking food at home using LPG to driving cars, running factory machinery, generating electricity, and flying aircraft, fuels drive every single sector of modern civilization. Without fuels, human mobility, industry, and technology would come to a standstill. However, because fossil fuels cause pollution and are exhaustible, we must transition to clean, sustainable alternative fuels.
+            </div>
+            <div class="lang-te bg-orange-50/50 p-4 rounded-2xl border border-orange-100 telugu-font text-orange-950">
+              <strong class="text-orange-900 block mb-1">సమాధానం (తెలుగు):</strong>
+              ఇది అక్షరాలా సత్యం. ఇళ్లలో వంట చేయడానికి ఎల్‌పీజీ గ్యాస్ నుండి, వాహనాలు నడపడానికి, ఫ్యాక్టరీలను నడపడానికి, విద్యుత్ ఉత్పత్తికి మరియు విమానాల ప్రయాణానికి ఇంధనాలు మన దైనందిన జీవితంలో నరనాడిలా కలిసిపోయాయి. ఇంధనాలు లేకపోతే ఆధునిక సమాజం ఒక్క క్షణం కూడా ముందుకు సాగలేదు. అయితే వీటి వల్ల కాలుష్యం పెరుగుతోంది కాబట్టి స్వచ్ఛమైన ప్రత్యామ్నాయ ఇంధనాల వైపు మనం మారాలి.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Part IV: Multiple Choice Questions (Page 118) -->
+      <div class="space-y-6">
+        <h4 class="text-lg font-black text-orange-900 bg-orange-50 border-l-4 border-orange-600 px-4 py-2 rounded-r-xl">
+          IV. Multiple Choice Questions (Page 118 Textbook MCQs)
+        </h4>
+
+        <!-- MCQ 1 -->
+        <div class="p-5 rounded-2xl border-2 border-slate-200 bg-white space-y-3">
+          <p class="font-black text-sm text-slate-900">
+            1. The gas needed for combustion among the following: [ <span class="text-orange-700 font-extrabold">b</span> ]
+          </p>
+          <p class="text-xs font-semibold text-slate-500 telugu-font">కింది వాటిలో దహనానికి అవసరమైన వాయువు ఏది?</p>
+          <div class="grid sm:grid-cols-2 gap-2 text-xs font-bold">
+            <div class="p-2.5 rounded-lg border bg-slate-50">a) Argon (ఆర్గాన్)</div>
+            <div class="p-2.5 rounded-lg border bg-emerald-100 border-emerald-500 text-emerald-950 font-black">b) Oxygen (ఆక్సిజన్) &#10004;</div>
+            <div class="p-2.5 rounded-lg border bg-slate-50">c) Carbon dioxide (కార్బన్ డై ఆక్సైడ్)</div>
+            <div class="p-2.5 rounded-lg border bg-slate-50">d) Hydrogen (హైడ్రోజన్)</div>
+          </div>
+          <p class="text-xs text-slate-600 bg-slate-50 p-2.5 rounded-xl border border-slate-200">
+            <strong>Scientific Reason:</strong> Oxygen is the primary supporter of combustion; no material can burn in its complete absence.
+          </p>
+        </div>
+
+        <!-- MCQ 2 -->
+        <div class="p-5 rounded-2xl border-2 border-slate-200 bg-white space-y-3">
+          <p class="font-black text-sm text-slate-900">
+            2. The lowest temperature at which a substance catches fire is called its: [ <span class="text-orange-700 font-extrabold">a</span> ]
+          </p>
+          <p class="text-xs font-semibold text-slate-500 telugu-font">పదార్థం మంటను అంటుకోవడానికి కావలసిన అతి తక్కువ ఉష్ణోగ్రతను ఏమంటారు?</p>
+          <div class="grid sm:grid-cols-2 gap-2 text-xs font-bold">
+            <div class="p-2.5 rounded-lg border bg-emerald-100 border-emerald-500 text-emerald-950 font-black">a) Ignition temperature (జ్వలన ఉష్ణోగ్రత) &#10004;</div>
+            <div class="p-2.5 rounded-lg border bg-slate-50">b) Maximum temperature</div>
+            <div class="p-2.5 rounded-lg border bg-slate-50">c) Room temperature</div>
+            <div class="p-2.5 rounded-lg border bg-slate-50">d) Normal temperature</div>
+          </div>
+          <p class="text-xs text-slate-600 bg-slate-50 p-2.5 rounded-xl border border-slate-200">
+            <strong>Scientific Reason:</strong> Ignition temperature represents the threshold thermal energy required to initiate combustion.
+          </p>
+        </div>
+
+        <!-- MCQ 3 -->
+        <div class="p-5 rounded-2xl border-2 border-slate-200 bg-white space-y-3">
+          <p class="font-black text-sm text-slate-900">
+            3. The units of calorific value is: [ <span class="text-orange-700 font-extrabold">c</span> ]
+          </p>
+          <p class="text-xs font-semibold text-slate-500 telugu-font">కెలోరిఫిక్ విలువ యొక్క ప్రమాణం ఏమిటి?</p>
+          <div class="grid sm:grid-cols-2 gap-2 text-xs font-bold">
+            <div class="p-2.5 rounded-lg border bg-slate-50">a) Newtons/grams</div>
+            <div class="p-2.5 rounded-lg border bg-slate-50">b) Newtons/Kg</div>
+            <div class="p-2.5 rounded-lg border bg-emerald-100 border-emerald-500 text-emerald-950 font-black">c) Kilojoules/kg (kJ/kg) &#10004;</div>
+            <div class="p-2.5 rounded-lg border bg-slate-50">d) Kilojoules/gram</div>
+          </div>
+          <p class="text-xs text-slate-600 bg-slate-50 p-2.5 rounded-xl border border-slate-200">
+            <strong>Scientific Reason:</strong> Calorific value measures heat energy per unit mass in kilojoules per kilogram (kJ/kg).
+          </p>
+        </div>
+
+        <!-- MCQ 4 -->
+        <div class="p-5 rounded-2xl border-2 border-slate-200 bg-white space-y-3">
+          <p class="font-black text-sm text-slate-900">
+            4. Spirit and petroleum turns into gas at: [ <span class="text-orange-700 font-extrabold">a</span> ]
+          </p>
+          <p class="text-xs font-semibold text-slate-500 telugu-font">స్పిరిట్ మరియు పెట్రోల్ ఏ ఉష్ణోగ్రత వద్ద ఆవిరిగా మారుతాయి?</p>
+          <div class="grid sm:grid-cols-2 gap-2 text-xs font-bold">
+            <div class="p-2.5 rounded-lg border bg-emerald-100 border-emerald-500 text-emerald-950 font-black">a) Room temperature (గది ఉష్ణోగ్రత) &#10004;</div>
+            <div class="p-2.5 rounded-lg border bg-slate-50">b) Ignition temperature</div>
+            <div class="p-2.5 rounded-lg border bg-slate-50">c) Maximum temperature</div>
+            <div class="p-2.5 rounded-lg border bg-slate-50">d) Normal temperature</div>
+          </div>
+          <p class="text-xs text-slate-600 bg-slate-50 p-2.5 rounded-xl border border-slate-200">
+            <strong>Scientific Reason:</strong> Highly volatile inflammable liquids evaporate rapidly into vapours even at standard room temperature.
+          </p>
+        </div>
+
+        <!-- MCQ 5 -->
+        <div class="p-5 rounded-2xl border-2 border-slate-200 bg-white space-y-3">
+          <p class="font-black text-sm text-slate-900">
+            5. The type of combustion in which material suddenly burns into flames without the application of any external agent is called: [ <span class="text-orange-700 font-extrabold">c</span> ]
+          </p>
+          <p class="text-xs font-semibold text-slate-500 telugu-font">బాహ్య కారకం లేకుండా పదార్థం అకస్మాత్తుగా మంటలతో మండే దహన ప్రక్రియను ఏమంటారు?</p>
+          <div class="grid sm:grid-cols-2 gap-2 text-xs font-bold">
+            <div class="p-2.5 rounded-lg border bg-slate-50">a) Rapid combustion</div>
+            <div class="p-2.5 rounded-lg border bg-slate-50">b) Slow combustion</div>
+            <div class="p-2.5 rounded-lg border bg-emerald-100 border-emerald-500 text-emerald-950 font-black">c) Spontaneous combustion (స్వయం దహనం) &#10004;</div>
+            <div class="p-2.5 rounded-lg border bg-slate-50">d) Explosion</div>
+          </div>
+          <p class="text-xs text-slate-600 bg-slate-50 p-2.5 rounded-xl border border-slate-200">
+            <strong>Scientific Reason:</strong> Spontaneous combustion occurs independently without external sparks or flames when ignition point is reached.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 5: SUGGESTED EXPERIMENTS (Page 118) ==================== -->
+    <section id="suggestedExperiments" class="space-y-6">
+      <div class="border-b-2 border-slate-200 pb-3">
+        <h3 class="text-2xl sm:text-3xl font-black text-slate-900 flex items-center gap-3">
+          <i class="fa-solid fa-flask-vial text-sky-600"></i>
+          Suggested Experiments (Page 118 Lab Writeups)
+        </h3>
+        <p class="text-sm text-slate-500 font-semibold mt-1">Full scientific writeups: Aim, Apparatus, Procedure, Observation Table, and Conclusions.</p>
+      </div>
+
+      <!-- Experiment 1 -->
+      <article class="bg-white p-6 sm:p-8 rounded-3xl border-2 border-slate-200 shadow-sm space-y-4">
+        <span class="text-xs font-black bg-sky-100 text-sky-900 px-3.5 py-1 rounded-full uppercase">
+          Suggested Experiment 1: Testing Necessity of Air for Burning
+        </span>
+        <h4 class="text-lg font-black text-slate-900">
+          Aim: To prove that air is necessary for the combustion of a candle.
+        </h4>
+        <p class="text-sm font-bold text-orange-700 telugu-font">ఉద్దేశం: కొవ్వొత్తి దహనానికి గాలి (ఆక్సిజన్) అవసరమని నిరూపించుట.</p>
+
+        <div class="grid md:grid-cols-2 gap-5 text-sm leading-relaxed">
+          <div class="lang-en bg-slate-50 p-4 rounded-2xl border border-slate-200 space-y-2">
+            <p><strong>Apparatus:</strong> Burning candle, glass tumbler, match box, table.</p>
+            <p><strong>Procedure:</strong>
+              1. Place a lighted candle on a table.<br>
+              2. Invert a glass tumbler carefully over the burning candle.<br>
+              3. Observe the flame duration and note when it flickers and goes off.
+            </p>
+            <p><strong>Observation:</strong> The candle burns steadily for a few seconds inside the closed tumbler, then flickers as oxygen is consumed, and finally extinguishes completely once oxygen is exhausted.</p>
+            <p><strong>Conclusion:</strong> Continuous air (oxygen) supply is indispensable for combustion.</p>
+          </div>
+          <div class="lang-te bg-orange-50/50 p-4 rounded-2xl border border-orange-100 telugu-font text-orange-950 space-y-2">
+            <p><strong>పరికరాలు:</strong> వెలుగుతున్న కొవ్వొత్తి, గాజు గ్లాసు, అగ్గిపెట్టె, బల్ల.</p>
+            <p><strong>విధానం:</strong> బల్లపై వెలుగుతున్న కొవ్వొత్తిని ఉంచి, దానిపై గాజు గ్లాసును బోర్లించాలి. మంట ఎలా మారుతుందో గమనించాలి.</p>
+            <p><strong>పరిశీలన:</strong> గ్లాసు కింద ఉన్న కొవ్వొత్తి కొద్దిసేపు వెలిగి, గ్లాసులోని ఆక్సిజన్ అయిపోగానే మంట మిణుకుమిణుకుమంటూ ఆరిపోతుంది.</p>
+            <p><strong>ముగింపు:</strong> దహన ప్రక్రియ నిరంతరం జరగడానికి గాలి (ఆక్సిజన్) సరఫరా తప్పనిసరి.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Experiment 2 -->
+      <article class="bg-white p-6 sm:p-8 rounded-3xl border-2 border-slate-200 shadow-sm space-y-4">
+        <span class="text-xs font-black bg-sky-100 text-sky-900 px-3.5 py-1 rounded-full uppercase">
+          Suggested Experiment 2: Heating Water in a Paper Vessel (Ignition Temperature)
+        </span>
+        <h4 class="text-lg font-black text-slate-900">
+          Aim: To demonstrate ignition temperature by heating water inside a paper cup without burning the paper vessel.
+        </h4>
+        <p class="text-sm font-bold text-orange-700 telugu-font">ఉద్దేశం: కాగితపు పాత్రలో నీటిని మరిగించడం ద్వారా జ్వలన ఉష్ణోగ్రత సూత్రాన్ని ప్రదర్శించుట.</p>
+
+        <div class="grid md:grid-cols-2 gap-5 text-sm leading-relaxed">
+          <div class="lang-en bg-slate-50 p-4 rounded-2xl border border-slate-200 space-y-2">
+            <p><strong>Apparatus:</strong> Two paper cups, water, tripod stand, spirit lamp or candle.</p>
+            <p><strong>Procedure:</strong>
+              1. Take an empty paper cup and heat it directly over a candle flame; it burns instantly.<br>
+              2. Take a second paper cup, pour water into it, and heat it over the candle flame.
+            </p>
+            <p><strong>Observation:</strong> The paper cup filled with water does not catch fire; instead, the water inside gets warm and eventually boils. Heat supplied to the paper is continuously conducted to the water, keeping the paper temperature below its ignition point.</p>
+            <p><strong>Conclusion:</strong> A substance will not burn unless its ignition temperature is reached.</p>
+          </div>
+          <div class="lang-te bg-orange-50/50 p-4 rounded-2xl border border-orange-100 telugu-font text-orange-950 space-y-2">
+            <p><strong>పరికరాలు:</strong> రెండు కాగితపు కప్పులు, నీరు, ట్రైపాడ్ స్టాండ్, కొవ్వొత్తి లేదా స్పిరిట్ లాంప్.</p>
+            <p><strong>విధానం:</strong> ఖాళీ కాగితపు కప్పును మంటపై ఉంచితే వెంటనే కాలిపోతుంది. రెండో కప్పులో నీరు పోసి మంటపై ఉంచి వేడి చేయాలి.</p>
+            <p><strong>పరిశీలన:</strong> నీరు నింపిన కాగితపు కప్పు కందదు, కానీ అందులోని నీరు వేడెక్కి మరుగుతుంది. కాగితానికి అందిన ఉష్ణం నీటికి బదిలీ కావడం వల్ల కాగితం జ్వలన ఉష్ణోగ్రతకు చేరదు.</p>
+            <p><strong>ముగింపు:</strong> జ్వలన ఉష్ణోగ్రత లభించకపోతే పదార్థం మందదని ఇది నిరూపిస్తుంది.</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- ==================== SECTION 6: SUGGESTED PROJECT WORKS (Page 118) ==================== -->
+    <section id="projectWorks" class="space-y-6">
+      <div class="border-b-2 border-slate-200 pb-3">
+        <h3 class="text-2xl sm:text-3xl font-black text-slate-900 flex items-center gap-3">
+          <i class="fa-solid fa-diagram-project text-teal-600"></i>
+          Suggested Project Works (Page 118 Class Projects)
+        </h3>
+        <p class="text-sm text-slate-500 font-semibold mt-1">Student project guides for fuel classification, calorific cost analysis, and poster appeals.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-5">
+        <!-- Project 1 -->
+        <div class="bg-white p-5 rounded-3xl border-2 border-slate-200 shadow-sm space-y-2.5">
+          <span class="text-xs font-black bg-teal-100 text-teal-900 px-3 py-1 rounded-full uppercase">Project 1</span>
+          <h4 class="font-extrabold text-sm text-slate-900">Classification of Domestic &amp; Industrial Fuels</h4>
+          <p class="text-xs text-slate-600 font-bold telugu-font">ప్రాజెక్ట్ 1: గృహోపయోగ మరియు పారిశ్రామిక ఇంధనాల వర్గీకరణ</p>
+          <div class="text-xs text-slate-600 space-y-1.5 bg-slate-50 p-3 rounded-xl border border-slate-200 leading-relaxed">
+            <p><strong>Plan:</strong> List various fuels used at home, in transport, and in factories; classify them into solid (wood, coal), liquid (petrol, diesel), and gas (LPG, CNG).</p>
+            <p class="telugu-font text-slate-900"><strong>తెలుగు మార్గదర్శి:</strong> ఇళ్లలో, వాహనాలలో, పరిశ్రమలలో వాడే ఇంధనాలను సేకరించి ఘన, ద్రవ, వాయు ఇంధనాలుగా పట్టిక తయారుచేయండి.</p>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="bg-white p-5 rounded-3xl border-2 border-slate-200 shadow-sm space-y-2.5">
+          <span class="text-xs font-black bg-teal-100 text-teal-900 px-3 py-1 rounded-full uppercase">Project 2</span>
+          <h4 class="font-extrabold text-sm text-slate-900">Fuel Cost vs. Calorific Value Analysis</h4>
+          <p class="text-xs text-slate-600 font-bold telugu-font">ప్రాజెక్ట్ 2: ఇంధనాల ధరలు మరియు కెలోరిఫిక్ విలువల తులనాత్మక నివేదిక</p>
+          <div class="text-xs text-slate-600 space-y-1.5 bg-slate-50 p-3 rounded-xl border border-slate-200 leading-relaxed">
+            <p><strong>Plan:</strong> Collect current market costs per kg/litre of LPG, petrol, diesel, and kerosene; compare their pricing against respective calorific values.</p>
+            <p class="telugu-font text-slate-900"><strong>తెలుగు మార్గదర్శి:</strong> ఎల్‌పీజీ, పెట్రోల్, డీజిల్ ప్రస్తుత మార్కెట్ ధరలను సేకరించి, వాటి కెలోరిఫిక్ విలువలతో పోల్చి ఆర్థిక నివేదిక రాయండి.</p>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="bg-white p-5 rounded-3xl border-2 border-slate-200 shadow-sm space-y-2.5">
+          <span class="text-xs font-black bg-teal-100 text-teal-900 px-3 py-1 rounded-full uppercase">Project 3</span>
+          <h4 class="font-extrabold text-sm text-slate-900">Fuel Conservation Poster &amp; Appeal</h4>
+          <p class="text-xs text-slate-600 font-bold telugu-font">ప్రాజెక్ట్ 3: ఇంధన సంరక్షణ పోస్టర్ మరియు విజ్ఞప్తి</p>
+          <div class="text-xs text-slate-600 space-y-1.5 bg-slate-50 p-3 rounded-xl border border-slate-200 leading-relaxed">
+            <p><strong>Plan:</strong> Research global annual fuel consumption statistics, estimate remaining fossil fuel reserves, and design an inspiring conservation poster.</p>
+            <p class="telugu-font text-slate-900"><strong>తెలుగు మార్గదర్శి:</strong> ప్రపంచవ్యాప్త ఇంధన వినియోగంపై సమాచారం సేకరించి ఇంధన ఆదా కోరుతూ ఒక ఆకర్షణీయమైన పోస్టర్‌ను రూపొందించండి.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 7: FLAME & CALORIFIC MARVELS ==================== -->
+    <section id="flameStructure" class="bg-gradient-to-br from-orange-50 via-white to-amber-50 rounded-3xl p-6 sm:p-10 border-2 border-orange-300 shadow-lg space-y-4">
+      <div class="flex items-center gap-3">
+        <div class="w-12 h-12 rounded-2xl bg-orange-600 text-white flex items-center justify-center text-2xl shadow-md">
+          <i class="fa-solid fa-fire-flame-curved"></i>
+        </div>
+        <div>
+          <span class="text-xs font-black uppercase tracking-wider text-orange-800 bg-orange-100 px-3 py-1 rounded-full">
+            Scientific Exploration Feature
+          </span>
+          <h4 class="text-xl sm:text-2xl font-black text-slate-900">The Chemistry of Flames &amp; Thermal Efficiency</h4>
+          <p class="text-xs sm:text-sm text-orange-800 font-bold telugu-font">మంటల రసాయన శాస్త్రం మరియు ఉష్ణ సామర్థ్యం</p>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 text-sm leading-relaxed">
+        <div class="lang-en bg-white p-5 rounded-2xl border border-orange-200 shadow-xs space-y-2">
+          <strong class="text-orange-950 block font-black text-base">English Scientific Insight:</strong>
+          <p>A flame is created only when vaporized fuels undergo combustion. Non-gaseous solids like charcoal do not vaporize and hence burn without a flame (surface glowing only).</p>
+          <p>The outermost non-luminous zone of a candle flame is the hottest because atmospheric oxygen is most abundant there, facilitating complete oxidation. Goldsmiths specifically use this blue zone with a blowpipe for melting gold and silver due to its extreme thermal intensity.</p>
+        </div>
+        <div class="lang-te bg-white p-5 rounded-2xl border border-orange-200 shadow-xs telugu-font text-orange-950 space-y-2">
+          <strong class="text-orange-950 block font-black text-base">తెలుగు సమగ్ర వివరణ:</strong>
+          <p>ఆవిరిగా మారే పదార్థాలు మాత్రమే మంటను (Flame) ఏర్పరుస్తాయి. బొగ్గు వంటి ఘన పదార్థాలు ఆవిరి కావు కాబట్టి అవి మంట లేకుండా (కేవలం ఎర్రగా మండుతూ) దహనం చెందుతాయి.</p>
+          <p>కొవ్వొత్తి మంటలో వెలుతురు లేని నీలి రంగు బాహ్య వలయం అత్యంత వేడైనది. ఆక్సిజన్ సరఫరా సమృద్ధిగా ఉండటం వల్ల అక్కడ సంపూర్ణ దహనం జరుగుతుంది. స్వర్ణాకారులు బంగారం, వెండి కరిగించడానికి ఈ నీలి రంగు భాగాన్నే ప్రత్యేకంగా ఉపయోగిస్తారు.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FLOATING BACK TO TOP BUTTON ==================== -->
+  <button onclick="scrollToTop()" id="backToTopBtn" title="Back to Top"
+    class="fixed bottom-6 right-6 z-40 w-12 h-12 rounded-full bg-orange-600 hover:bg-orange-700 text-white shadow-2xl flex items-center justify-center transition-all duration-300 transform translate-y-20 opacity-0 hover:scale-110">
+    <i class="fa-solid fa-arrow-up text-base"></i>
+  </button>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-slate-950 text-slate-400 py-10 border-t-2 border-slate-800 text-xs sm:text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-3">
+      <div class="flex items-center justify-center gap-2 text-amber-400 font-black text-base sm:text-lg">
+        <i class="fa-solid fa-school"></i>
+        <span>JACOB GAPP SCHOOL, PALADUGU, TELANGANA</span>
+      </div>
+      <p class="text-slate-200 font-bold">Class 8 Physical Sciences - Chapter 8: COMBUSTION, FUELS AND FLAME (దహనం, ఇంధనాలు మరియు మంట) Portal</p>
+      <p class="text-slate-400">Educational Initiative curated by <strong>Bro. Balaswamy S.M</strong> for high school students | Exhaustive English &amp; Telugu Learning Architecture</p>
+      <div class="flex flex-wrap items-center justify-center gap-4 text-slate-400 text-xs pt-2">
+        <span><i class="fa-solid fa-envelope text-amber-400 mr-1.5"></i>Official Report Target: balaswamysm@gmail.com</span>
+        <span>•</span>
+        <span><i class="fa-solid fa-location-dot text-amber-400 mr-1.5"></i>Paladugu, Telangana, India</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== JAVASCRIPT SYSTEM ==================== -->
+  <script>
+    /* =====================================================================
+       1. STUDENT TRACKING & MANDATORY ADMISSION GATE MODAL
+       ===================================================================== */
+    let currentStudent = {
+      name: "",
+      roll: "",
+      school: "JACOB GAPP SCHOOL, PALADUGU, TELANGANA",
+      startTime: Date.now(),
+      sessionSeconds: 0
+    };
+
+    let timerInterval = null;
+
+    window.addEventListener('DOMContentLoaded', () => {
+      document.body.style.overflowY = 'auto';
+      document.documentElement.style.overflowY = 'auto';
+
+      checkAdmission();
+      buildEightyPoints();
+      buildGlossary();
+      initScrollSpy();
+    });
+
+    function checkAdmission() {
+      try {
+        const stored = sessionStorage.getItem('class8_combustion_student');
+        if (stored) {
+          const parsed = JSON.parse(stored);
+          if (parsed && parsed.name && parsed.roll) {
+            currentStudent.name = parsed.name;
+            currentStudent.roll = parsed.roll;
+            document.getElementById('displayStudentName').innerText = currentStudent.name;
+            document.getElementById('displayStudentRoll').innerText = currentStudent.roll;
+            document.getElementById('admissionModal').classList.add('hidden');
+            startSessionTimer();
+            return;
+          }
+        }
+      } catch(e) {}
+      openAdmissionModal();
+    }
+
+    function openAdmissionModal() {
+      document.getElementById('admissionModal').classList.remove('hidden');
+      try {
+        const stored = sessionStorage.getItem('class8_combustion_student');
+        if (stored) {
+          const parsed = JSON.parse(stored);
+          if (parsed.name) document.getElementById('modalStudentName').value = parsed.name;
+          if (parsed.roll) document.getElementById('modalStudentRoll').value = parsed.roll;
+        }
+      } catch(e) {}
+    }
+
+    function submitAdmission() {
+      const name = document.getElementById('modalStudentName').value.trim();
+      const roll = document.getElementById('modalStudentRoll').value.trim();
+
+      if (!name || !roll) {
+        alert("Please enter both your Full Name and Roll Number to enter the portal.");
+        return;
+      }
+
+      currentStudent.name = name;
+      currentStudent.roll = roll;
+
+      try {
+        sessionStorage.setItem('class8_combustion_student', JSON.stringify({
+          name: name,
+          roll: roll,
+          school: "JACOB GAPP SCHOOL, PALADUGU, TELANGANA"
+        }));
+      } catch(e) {}
+
+      document.getElementById('displayStudentName').innerText = name;
+      document.getElementById('displayStudentRoll').innerText = roll;
+      document.getElementById('admissionModal').classList.add('hidden');
+      startSessionTimer();
+    }
+
+    function startSessionTimer() {
+      if (timerInterval) clearInterval(timerInterval);
+      timerInterval = setInterval(() => {
+        currentStudent.sessionSeconds++;
+        const timerElem = document.getElementById('liveSessionTimer');
+        if (timerElem) {
+          timerElem.innerText = formatDuration(currentStudent.sessionSeconds);
+        }
+      }, 1000);
+    }
+
+    function formatDuration(secs) {
+      const mins = Math.floor(secs / 60);
+      const remSecs = secs % 60;
+      return `${String(mins).padStart(2, '0')}:${String(remSecs).padStart(2, '0')}`;
+    }
+
+    function sendReportDirect() {
+      if (!currentStudent.name) {
+        openAdmissionModal();
+        return;
+      }
+      const mins = Math.floor(currentStudent.sessionSeconds / 60);
+      const secs = currentStudent.sessionSeconds % 60;
+
+      let body = `JACOB GAPP SCHOOL, PALADUGU, TELANGANA%0D%0A`;
+      body += `CLASS 8 PHYSICAL SCIENCES - CHAPTER 8: COMBUSTION, FUELS AND FLAME%0D%0A`;
+      body += `EDUCATIONAL PORTAL - ATTENDANCE & READING TIME REPORT%0D%0A`;
+      body += `===============================================================%0D%0A`;
+      body += `Student Name : ${currentStudent.name}%0D%0A`;
+      body += `Roll Number  : ${currentStudent.roll}%0D%0A`;
+      body += `School       : JACOB GAPP SCHOOL, PALADUGU, TELANGANA%0D%0A`;
+      body += `Active Read Time : ${mins} minutes ${secs} seconds (${currentStudent.sessionSeconds} total seconds)%0D%0A`;
+      body += `Timestamp    : ${new Date().toLocaleString('en-IN')}%0D%0A`;
+      body += `Mentor / Curator : Bro. Balaswamy S.M%0D%0A`;
+      body += `===============================================================%0D%0A`;
+      body += `Status: Student completed session review of SCERT Chapter 8 (Pages 107-118).`;
+
+      const mailtoUrl = `mailto:balaswamysm@gmail.com?subject=${encodeURIComponent("Combustion Chapter Study Attendance: " + currentStudent.name + " (Roll " + currentStudent.roll + ")")}&body=${body}`;
+      window.location.href = mailtoUrl;
+    }
+
+    function changeFontSize(size) {
+      document.body.classList.remove('font-sm', 'font-md', 'font-lg', 'font-xl');
+      if (size === 'sm') document.body.classList.add('font-sm');
+      else if (size === 'md') document.body.classList.add('font-md');
+      else if (size === 'lg') document.body.classList.add('font-lg');
+      else if (size === 'xl') document.body.classList.add('font-xl');
+    }
+
+    /* =====================================================================
+       2. 80 MASTER CONCEPTS (TELUGU LONG DESCRIPTIONS & REAL-LIFE EXAMPLES)
+       ===================================================================== */
+    const masterConceptsCombustion = [
+      { t: "Combustion", te: "దహనం", d: "పదార్థం ఆక్సిజన్‌తో రసాయనికంగా చర్య జరిపి ఉష్ణం మరియు కాంతిని వెలువరించే ప్రక్రియను దహనం అంటారు.", ex: "వంట గ్యాస్ స్టవ్ వెలిగించినప్పుడు మంట రావడం." },
+      { t: "Combustible Materials", te: "దహనశీల పదార్థాలు", d: "మంట సమీపానికి తెచ్చినప్పుడు సులభంగా మంటను అంటుకుని మండే పదార్థాలను దహనశీల పదార్థాలు అంటారు.", ex: "కాగితం, కట్టెలు, బట్టలు మరియు పెట్రోల్." },
+      { t: "Non-Combustible Materials", te: "దహనశీల కాని పదార్థాలు", d: "ఎంత ఉష్ణాన్నిచ్చినా లేదా మంట దగ్గరకు తెచ్చినా అస్సలు మందని పదార్థాలను దహనశీల కాని పదార్థాలు అంటారు.", ex: "రాయి, నీరు, ఇసుక మరియు గాజు." },
+      { t: "Oxygen Necessity in Burning", te: "దహనానికి ఆక్సిజన్ అవసరం", d: "గాలిలోని ఆక్సిజన్ లేకపోతే ఏ పదార్థమూ మంటను అంటుకోలేదు; దహన ప్రక్రియ ఆగిపోతుంది.", ex: "వెలుగుతున్న కొవ్వొత్తిపై గ్లాసు బోర్లిస్తే ఆరిపోవడం." },
+      { t: "Ignition Temperature", te: "జ్వలన ఉష్ణోగ్రత", d: "ఏదైనా దహనశీల పదార్థం మంటను అంటుకోవడానికి కావలసిన అతి తక్కువ ఉష్ణోగ్రతను జ్వలన ఉష్ణోగ్రత అంటారు.", ex: "కాగితం త్వరగా మంటుకుంటుంది కానీ చెక్క దుంగ మంటగీయడానికి ఎక్కువ సేపు పట్టడం." },
+      { t: "Inflammable Substances", te: "అత్యంత దహనశీల పదార్థాలు", d: "అతి తక్కువ జ్వలన ఉష్ణోగ్రత కలిగి ఉండి చిన్న నిప్పు రవ్వ తగిలినా క్షణంలో మంటలంటుకునే పదార్థాలు.", ex: "పెట్రోల్, స్పిరిట్, ఆల్కహాల్ మరియు ఎల్‌పీజీ గ్యాస్." },
+      { t: "Rapid Combustion", te: "శీఘ్ర దహనం", d: "బాహ్య ఉష్ణాన్ని లేదా స్పార్క్‌ను ఇవ్వగానే పదార్థం అత్యంత వేగంగా మండి ఉష్ణ, కాంతులను వెలువరించే ప్రక్రియ.", ex: "గ్యాస్ లైటర్ వెలిగించగానే స్టవ్ మంట అంటుకోవడం." },
+      { t: "Spontaneous Combustion", te: "స్వయం దహనం", d: "బాహ్య కారకం లేదా అగ్గిపుల్ల అవసరం లేకుండానే పదార్థం అంతర్గతంగా వేడెక్కి అకస్మాత్తుగా మంటలతో మండే ప్రక్రియ.", ex: "ఎండకాలం అడవుల్లో ఎండిన గడ్డి దానంతట అదే అంటుకోవడం." },
+      { t: "Explosion", te: "స్ఫోటనం లేదా పేలుడు", d: "టపాసులు లేదా బాంబులకు నిప్పు పెట్టినప్పుడు ఒక్కసారిగా ఉష్ణం, కాంతి, శబ్దం మరియు భారీ వాయువులు వెలువడే రసాయన చర్య.", ex: "దీపావళికి లక్ష్మీ బాంబులు పేలడం." },
+      { t: "Fuels", te: "ఇంధనాలు", d: "గృహోపయోగానికి, పరిశ్రమలకు మరియు రవాణాకు ఉష్ణ శక్తిని అందించే పదార్థాలను ఇంధనాలు అంటారు.", ex: "కట్టెలు, బొగ్గు, ఎల్పీజీ మరియు డీజిల్." },
+      { t: "Calorific Value", te: "కెలోరిఫిక్ విలువ", d: "ఒక కిలోగ్రాముల ఇంధనం పూర్తిగా దహనం చెందడం ద్వారా వెలువడే ఉష్ణ శక్తి పరిమాణాన్ని కెలోరిఫిక్ విలువ అంటారు (kJ/kg).", ex: "ఎల్‌పీజీ గ్యాస్ కెలోరిఫిక్ విలువ 55,000 kJ/kg ఉండటం." },
+      { t: "Hydrogen Calorific Value", te: "హైడ్రోజన్ కెలోరిఫిక్ విలువ", d: "అన్ని ఇంధనాలకంటే అత్యధికంగా 1,50,000 kJ/kg ఉష్ణ శక్తిని ఇచ్చే స్వచ్ఛమైన ఇంధనం హైడ్రోజన్.", ex: "రాకెట్లలో ఇంధనంగా హైడ్రోజన్ వాడటం." },
+      { t: "Fire Extinguishing Principle", te: "అగ్నిమాపక సూత్రం", d: "ఇంధనం, ఆక్సిజన్ సరఫరా మరియు జ్వలన ఉష్ణోగ్రత - ఈ మూడింటిలో దేనినైనా తొలగించడం ద్వారా మంటలను అణచివేయవచ్చు.", ex: "మంటలపై నీరు చల్లడం లేదా గ్లాసు బోర్లించడం." },
+      { t: "Water as Extinguisher", te: "నీటితో మంటలార్పుట", d: "నీరు మండుతున్న పదార్థంపై పడి దాని ఉష్ణోగ్రతను జ్వలన స్థానం కంటే తక్కువకు కుదించి నీటి ఆవిరి ద్వారా ఆక్సిజన్‌ను అడ్డుకుంటుంది.", ex: "కట్టెలు లేదా కాగితాలకు అంటుకున్న మంటలపై నీరు కొట్టడం." },
+      { t: "Why Water Fails on Oil Fires", te: "ఆయిల్ మంటలపై నీరు ఎందుకు పనిచేయదు?", d: "నూనె నీటి కంటే తేలికగా ఉండటం వల్ల నీటిపై తేలి మండుతూనే ఉంటుంది, పైగా నూనె తుంపర్లు చిమ్ముతాయి.", ex: "వంట నూనెకు మంట అంటుకుంటే నీరు పోయకూడదు." },
+      { t: "Why Water Fails on Electrical Fires", te: "విద్యుత్ మంటలపై నీరు ఎందుకు పనికిరాదు?", d: "సాధారణ నీరు విద్యుత్‌ను ప్రసరింపజేస్తుంది కాబట్టి నీరు చల్లితే షాక్ కొట్టే ప్రమాదం ఉంది.", ex: "షార్ట్ సర్క్యూట్ అయిన వైర్లపై నీరు చల్లకపోవడం." },
+      { t: "Carbon Dioxide Fire Extinguisher", te: "కార్బన్ డై ఆక్సైడ్ అగ్నిమాపకం", d: "ఆక్సిజన్ కంటే బరువుగా ఉండి మంటలను కంబళిలా కప్పి గాలితో సంబంధాన్ని తెంచే ఉత్తమ వాయువు $CO_2$.", ex: "పెద్ద బిల్డింగుల్లో ఎరుపు రంగులో ఉండే $CO_2$ సిలిండర్లు." },
+      { t: "Flame", te: "మంట (Flame)", d: "వాయురూపంలో దహనం చెందే పదార్థాలు వెలిగించినప్పుడు ఏర్పడే ప్రకాశవంతమైన ఉష్ణ వలయాన్ని మంట అంటారు.", ex: "కొవ్వొత్తి లేదా గ్యాస్ స్టవ్ మంట." },
+      { t: "Dark Zone (Innermost)", te: "చీకటి వలయం", d: "మంటకు अगदी అడుగున ఉండే వేడి తక్కువగా ఉండే, మంట లేని మైనపు ఆవిర్లు గల ప్రాంతం.", ex: "కొవ్వొత్తి ఒత్తి దగ్గర నల్లగా కనిపించే భాగం." },
+      { t: "Luminous Zone (Middle)", te: "కాంతివంతమైన వలయం (పసుపు రంగు)", d: "అసంపూర్ణ దహనం జరిగి మసి (కార్బన్ కణాలు) వెలువడే పసుపు రంగు మధ్య భాగం.", ex: "కొవ్వొత్తి మంట మధ్యలో ఉండే ప్రకాశవంతమైన పసుపు భాగం." },
+      { t: "Non-Luminous Zone (Outermost)", te: "కాంతిహీన వలయం (నీలి రంగు)", d: "ఆక్సిజన్ సమృద్ధిగా లభించి సంపూర్ణ దహనం జరిగే మంటలోకెల్లా అత్యంత వేడైన బాహ్య భాగం.", ex: "మంటకు చివరన ఉండే నీలి రంగు అంచు." },
+      { t: "Copper Wire Glowing Test", te: "రాగి తీగ ప్రయోగం", d: "రాగి తీగను మంట బాహ్య నీలి వలయంలో ఉంచితే అది ఎర్రగా మండుతుంది, ఇది అత్యధిక ఉష్ణోగ్రతను చూపుతుంది.", ex: "మంటలో ఏ భాగం వేడిగా ఉంటుందో నిరూపించే ప్రయోగం." },
+      { t: "Glass Slide Soot Test", te: "గాజు స్లైడ్ మసి ప్రయోగం", d: "మధ్య పసుపు వలయంలో గాజు స్లైడ్ పెడితే అసంపూర్ణ దహనం వల్ల నల్లటి వలయ రూపంలో మసి ఏర్పడుతుంది.", ex: "కొవ్వొత్తి మంటపై ప్లేట్ పెడితే నల్లగా కావటం." },
+      { t: "Glass Tube Vapour Test", te: "గాజు గొట్టం ఆవిరి ప్రయోగం", d: "గాజు గొట్టం ఒక చివరను చీకటి వలయంలో ఉంచితే మరో చివర మంటను అంటుకుంటుంది, ఇది మైనపు ఆవిర్లను రుజువు చేస్తుంది.", ex: "మండే ఆవిర్లు గొట్టం గుండా ప్రయాణించడం." },
+      { t: "Potassium Permanganate Heating", te: "పొటాషియం పర్మాంగనేట్ వేడి చేయుట", d: "ఈ రసాయనాన్ని వేడి చేయడం ద్వారా ప్రయోగశాలలో స్వచ్ఛమైన ఆక్సిజన్ వాయువును తయారుచేస్తారు.", ex: "టెస్ట్ ట్యూబ్‌లో ఉంచి స్పిరిట్ లాంప్ తో వేడి చేయడం." },
+      { t: "Glowing Agarbatti Test", te: "అగరుబత్తి పరీక్ష", d: "మంట ఆరిపోయి ఎర్రగా కాలుతున్న అగరుబత్తిని ఆక్సిజన్‌లో ఉంచితే అది ప్రకాశవంతంగా మండుతుంది.", ex: "ఆక్సిజన్ ఉనికిని పరీక్షించే సులభమైన ప్రయోగం." },
+      { t: "Magnifying Lens Combustion", te: "బిళ్ళ లెన్స్‌తో కాగితం కాల్చుట", d: "సూర్యకిరణాలను ఒకే బిందువు వద్ద కేంద్రీకరించి కాగితం జ్వలన ఉష్ణోగ్రతను సాధించడం.", ex: "ఎండలో లెన్స్ ద్వారా కాగితంపై మంట పెట్టడం." },
+      { t: "Safety Matchstick Chemistry", te: "సేఫ్టీ అగ్గిపుల్ల రసాయన శాస్త్రం", d: "అగ్గిపుల్ల తలపై యాంటిమోని ట్రిసల్ఫైడ్, పొటాషియం క్లోరేట్; బాక్స్‌పై ఎరుపు ఫాస్పరస్ ఉంటాయి.", ex: "అగ్గిపుల్ల గీసినప్పుడు మంట అంటుకోవడం." },
+      { t: "White Phosphorus Danger", te: "తెల్ల ఫాస్పరస్ ప్రమాదం", d: "అతి తక్కువ జ్వలన ఉష్ణోగ్రత కలిగి ఉండి గదిలో దానంతట అదే మందే ప్రమాదకర మూలకం.", ex: "దీని బదులు సేఫ్టీ మ్యాచ్‌లలో ఎరుపు ఫాస్పరస్ వాడటం." },
+      { t: "Red Phosphorus Conversion", te: "ఎరుపు ఫాస్పరస్ మార్పు", d: "అగ్గిపుల్ల గీసినప్పుడు ఘర్షణ ఉష్ణంతో కొంత ఎరుపు ఫాస్పరస్ తెల్ల ఫాస్పరస్‌గా మారి చర్యను ప్రారంభిస్తుంది.", ex: "బాక్స్‌కు పుల్ల రాపిడి జరగడం." },
+      { t: "Paper Vessel Water Boiling", te: "కాగితపు పాత్రలో నీరు మరిగించుట", d: "ఉష్ణం నీటికి బదిలీ కావడం వల్ల కాగితం మందకుండా నీరు మరుగుతుందని నిరూపించే ప్రయోగం.", ex: "కాగితపు కప్పులో నీరు కాగడం." },
+      { t: "Forest Dry Grass Fires", te: "అడవులలో గడ్డి అంటుకోవడం", d: "ఎండకాలం తీవ్ర వేడికి అడవులలో గడ్డి దానంతట అదే స్వయం దహనానికి గురికావడం.", ex: "అడవి కార్చిచ్చు (Forest fires)." },
+      { t: "Petrol Tanker Warning", te: "పెట్రోల్ ట్యాంకర్ల హెచ్చరిక", d: "అత్యంత దహనశీల పెట్రోల్ ఆవిర్లు పేలకుండా ట్యాంకర్లపై 'Highly Inflammable' అని రాస్తారు.", ex: "రోడ్లపై వెళ్లే ఇండియన్ ఆయిల్ ట్యాంకర్లు." },
+      { t: "Fire Brigade Operations", te: "అగ్నిమాపక సేవల చర్యలు", d: "ప్రమాదం జరిగినప్పుడు మొదట విద్యుత్ మెయిన్ ఆఫ్ చేసి, తర్వాత నీటిని లేదా $CO_2$ ను స్ప్రే చేస్తారు.", ex: "అగ్నిమాపక వాహనం రావడం." },
+      { t: "Charcoal Surface Glow", te: "బొగ్గు ఉపరితల కాంతి", d: "బొగ్గు ఆవిరి కాదు కాబట్టి అది మంటను ఇవ్వకుండా కేవలం ఎర్రగా మెరుస్తూ దహనం చెందుతుంది.", ex: "కుంపటిలో బొగ్గు మంటలు." },
+      { t: "Gaseous Fuel Burning", te: "వాయు ఇంధన దహనం", d: "వాయు రూపంలో ఉండే ఇంధనాలు అత్యంత వేగంగా ఆక్సిజన్‌తో కలిసి మంటను ఇస్తాయి.", ex: "వంట గ్యాస్ సిలిండర్ మంట." },
+      { t: "Liquid Fuel Vapour Burning", te: "ద్రవ ఇంధన ఆవిరి దహనం", d: "కెరోసిన్ లేదా పెట్రోల్ ఒత్తి గుండా పైకి వచ్చి ఆవిరిగా మారి మంటను ఇస్తాయి.", ex: "కెరోసిన్ స్టవ్ మంట." },
+      { t: "Solid Wax Vaporisation", te: "మొవ్వ ఆవిరిభవనం", d: "కొవ్వొత్తి ఒత్తి ద్వారా కరిగిన మైనం పైకి వచ్చి ఆవిరిగా మారి మండుతుంది.", ex: "కొవ్వొత్తి కరగడం." },
+      { t: "Goldsmith Blowpipe Use", te: "స్వర్ణాకారుడు బ్లో పైప్ వాడకం", d: "బంగారం కరిగించడానికి స్వర్ణాకారులు మంటలోని అత్యంత వేడైన నీలి రంగు బాహ్య వలయాన్ని వాడతారు.", ex: "నూలు గొట్టంతో మంటను ఊదడం." },
+      { t: "Complete Combustion", te: "సంపూర్ణ దహనం", d: "ఆక్సిజన్ సమృద్ధిగా లభించి ఇంధనం పూర్తిగా మండి కార్బన్ డై ఆక్సైడ్, నీటి ఆవిరిని ఇచ్చే ప్రక్రియ.", ex: "నీలి రంగు మంటలో జరిగే చర్య." },
+      { t: "Incomplete Combustion", te: "అసంపూర్ణ దహనం", d: "ఆక్సిజన్ కొరత వల్ల ఇంధనం సరిగ్గా మందక కార్బన్ మోనాసైడ్ మరియు మసిని వెలువరించే ప్రక్రియ.", ex: "పసుపు రంగు మంటలో జరిగే చర్య." },
+      { t: "Carbon Monoxide Hazard", te: "కార్బన్ మోనాసైడ్ ముప్పు", d: "అసంపూర్ణ దహనం వల్ల వెలువడే అత్యంత విషపూరితమైన వాయువు. ఇది ప్రాణాంతకం.", ex: "మూసిన గదిలో కట్టెలు కాలిస్తే వచ్చే పొగ." },
+      { t: "Soot Deposition", te: "మసి ఏర్పడుట", d: "మంట మధ్య వలయంలో పూర్తిగా మందని కార్బన్ కణాలు పాత్రల అడుగున నల్లగా అతుక్కోవడం.", ex: "కొవ్వొత్తి మంటపై పాత్ర పెడితే నల్లగా మారడం." },
+      { t: "Ignition Delay", te: "జ్వలన ఆలస్యం", d: "పదార్థం జ్వలన ఉష్ణోగ్రతను చేరుకోవడానికి పట్టే సమయం.", ex: "పచ్చి కట్టెలు మంటను అందుకోవడానికి ఎక్కువ సమయం పట్టడం." },
+      { t: "Fire Blanket Blanket Cover", te: "దుప్పటి కప్పి మంటలార్పుట", d: "మంటలకు ఆక్సిజన్ అందకుండా తడి దుప్పటితో కప్పి మంటలను ఆర్పే పద్ధతి.", ex: "బట్టలకు మంట అంటుకుంటే దుప్పటి కప్పడం." },
+      { t: "Sand Extinguishing Method", te: "ఇసుకతో మంటలార్పుట", d: "పెట్రోల్ లేదా నూనె మంటలపై ఇసుకను పోయడం ద్వారా గాలితో సంబంధాన్ని తెంచి మంటను ఆర్పడం.", ex: "బంకుల్లో ఇసుక బకెట్లు ఉంచడం." },
+      { t: "Combustion Products", te: "దహన ఉత్పన్నాలు", d: "ఇంధనం దహనం చెందిన తర్వాత వెలువడే కార్బన్ డై ఆక్సైడ్, నీటి ఆవిరి, ఉష్ణం మరియు కాంతి.", ex: "మంట వెలువడే ఉష్ణం మరియు గ్యాస్." },
+      { t: "Domestic Fuel Safety", te: "గృహోపయోగ ఇంధన భద్రత", d: "ఎల్పీజీ సిలిండర్లను వాడేటప్పుడు రెగ్యులేటర్ ఆఫ్ చేయడం మరియు లీకేజీలను తనిఖీ చేయడం.", ex: "వంట అయ్యాక గ్యాస్ నాబ్ బంద్ చేయడం." },
+      { t: "Calorific Comparison", te: "కెలోరిఫిక్ విలువల పోలిక", d: "పెట్రోల్, ఎల్పీజీ, బొగ్గు వంటి విభిన్న ఇంధనాలు ఇచ్చే ఉష్ణ శక్తి సామర్థ్యాలను బేరీజు వేయడం.", ex: "ఏ ఇంధనం ఎక్కువ ఉష్ణాన్ని ఇస్తుందో లెక్కించడం." },
+      { t: "Matchstick Striking Friction", te: "అగ్గిపుల్ల రాపిడి ఉష్ణం", d: "అగ్గిపుల్ల తలను బాక్స్ గీతపై రుద్దినప్పుడు పుట్టే ఘర్షణ ఉష్ణం రసాయన చర్యను ప్రారంభిస్తుంది.", ex: "పుల్ల గీయగానే మంట రావడం." },
+      { t: "Moisture Content in Leaves", te: "ఆకులలో తేమ శాతం", d: "పచ్చి ఆకులలోని నీరు ఉష్ణాన్ని పీల్చుకోవడం వల్ల అవి త్వరగా మందవు.", ex: "పచ్చి ఆకులు వేస్తే పొగ రావడం." },
+      { t: "Spirit Lamp Flame", te: "స్పిరిట్ లాంప్ మంట", d: "ప్రయోగశాలలలో సులభంగా వేడి చేయడానికి వాడే స్పిరిట్ మంట శీఘ్ర దహనానికి ఉదాహరణ.", ex: "ల్యాబ్‌లో పరీక్ష నాళికలు వేడి చేయడం." },
+      { t: "Camphor Burning", te: "కర్పూరం మంట", d: "హారతి కర్పూరం గది ఉష్ణోగ్రత వద్ద ఆవిరై ప్రకాశవంతమైన మంటతో తక్షణమే మండుతుంది.", ex: "పూజా సమయంలో హారతి వెలిగించడం." },
+      { t: "Cow Dung Cake Fuel", te: "పేడ పిడకల ఇంధనం", d: "గ్రామీణ ప్రాంతాలలో ఇంధనంగా వాడే ఆవు పేడతో చేసిన ఎండిన పిడకలు.", ex: "పల్లెల్లో పొయ్యిలలో పిడకలు కాల్చడం." },
+      { t: "Magnesium Ribbon Flame", te: "మెగ్నీషియం పట్టీ మంట", d: "మెగ్నీషియం గాలిలో మండి తెల్లటి ప్రకాశవంతమైన కాంతిని మరియు మెగ్నీషియం ఆక్సైడ్ బూడిదను ఇస్తుంది.", ex: "ల్యాబ్‌లో మెగ్నీషియం కాల్చే ప్రయోగం." },
+      { t: "Fire Triangle Concept", te: "అగ్ని త్రిభుజం భావన", d: "ఇంధనం, ఆక్సిజన్, జ్వలన ఉష్ణోగ్రత అనే మూడు అంశాలు ఉంటేనే మంట నిలబడుతుంది.", ex: "మంటను నియంత్రించాలంటే ఈ మూడింటిలో ఒకటి తొలగించాలి." },
+      { t: "Combustion Research", te: "దహన పరిశోధనలు", d: "శాస్త్రవేత్తలు తక్కువ కాలుష్యంతో ఎక్కువ శక్తినిచ్చే ఇంధనాలపై నిరంతరం పరిశోధనలు చేయడం.", ex: "ఎలక్ట్రిక్ కార్లు మరియు గ్రీన్ హైడ్రోజన్." },
+      { t: "Fire Safety Regulations", te: "అగ్నిమాపక భద్రతా నిబంధనలు", d: "పాఠశాలలు, ఆసుపత్రులు, మాల్స్‌లో తప్పుకోవడానికి వీలుగా ఫైర్ ఎక్స్‌టింగ్విషర్లు అమర్చడం.", ex: "స్కూల్ కారిడార్లలో ఎరుపు సిలిండర్లు ఉండటం." },
+      { t: "Ignition Point Variance", te: "జ్వలన స్థానాల భేదం", d: "విభిన్న పదార్థాలు మంటను అంటుకోవడానికి వేర్వేరు ఉష్ణోగ్రతలు అవసరమవుతాయి.", ex: "పెట్రోల్ త్వరగా, కట్టెలు నెమ్మదిగా మంటనందుకుంటాయి." },
+      { t: "Clean Energy Transition", te: "స్వచ్ఛమైన శక్తికి మార్పు", d: "గ్లోబల్ వార్మింగ్ తగ్గించడానికి శిలాజ ఇంధనాల నుండి సౌర, పవన ఇంధనాలకు మారడం.", ex: "ఇళ్లపై సోలార్ ప్యానెల్స్ పెట్టుకోవడం." },
+      { t: "Energy Density", te: "శక్తి సాంద్రత", d: "యూనిట్ బరువు లేదా పరిమాణంలో నిల్వ ఉండే ఉష్ణ శక్తి పరిమాణం.", ex: "పెట్రోల్ మరియు హైడ్రోజన్ శక్తి సాంద్రత." },
+      { t: "Thermal Energy Output", te: "ఉష్ణ శక్తి ఉత్పత్తి", d: "ఇంధనం దహనం చెందినప్పుడు వెలువడి వంటకు లేదా యంత్రాలకు అందే ఉష్ణ శక్తి.", ex: "గ్యాస్ స్టవ్ ద్వారా పాత్రకు అందే వేడి." },
+      { t: "Volatile Vapours", te: "బాష్పశీల ఆవిర్లు", d: "గది ఉష్ణోగ్రత వద్ద సులభంగా ఆవిరిగా మారే ద్రవాల గుణం.", ex: "పెట్రోల్ మూత తెరిస్తే ఆవిరైపోవడం." },
+      { t: "Spontaneous Forest Fire", te: "స్వయం అడవి కార్చిచ్చు", d: "వేసవి ఉష్ణోగ్రతల తీవ్రతకు అడవిలోని ఎండుగడ్డి దానంతట అదే అంటుకోవడం.", ex: "వేసవిలో అడవులకు నిప్పు అంటుకోవడం." },
+      { t: "Controlled Combustion", te: "నియంత్రిత దహనం", d: "ఇంజిన్లు లేదా స్టవ్‌లలో ఇంధనాన్ని నియంత్రణలో మండిస్తూ శక్తిని పొందడం.", ex: "కారు ఇంజిన్ సిలిండర్లలో పెట్రోల్ మందడం." },
+      { t: "Smothering Fire", te: "మంటలను గాలి ఆపి అణచుట", d: "మంటలపై దుప్పటి కప్పి ఆక్సిజన్ అందకుండా చేసి మంటను ఆర్పే పద్ధతి.", ex: "మంటలను దుప్పటితో కప్పడం." },
+      { t: "Cooling Fire", te: "నీటితో ఉష్ణోగ్రత తగ్గించి మంటలార్పుట", d: "నీటిని చల్లడం ద్వారా జ్వలన ఉష్ణోగ్రతను తగ్గించి మంటలను ఆర్పే పద్ధతి.", ex: "నీటితో కట్టెల మంటలను ఆర్పడం." },
+      { t: "Starving Fire", te: "ఇంధనాన్ని తొలగించి మంటలార్పుట", d: "మండే పదార్థం దొరకకుండా చుట్టూ ఉన్న కట్టెలను వేరుచేసి మంటను ఆర్పే విధానం.", ex: "అడవిలో చెట్లను నరికి మంట ఆపడం." },
+      { t: "Matchstick Head Composition", te: "అగ్గిపుల్ల తల రసాయన కూర్పు", d: "యాంటిమోని ట్రిసల్ఫైడ్ మరియు పొటాషియం క్లోరేట్ మిశ్రమం.", ex: "అగ్గిపుల్ల తలపై ఉండే నల్లటి మందు." },
+      { t: "Rubbing Surface Composition", te: "అగ్గిపెట్టె గీత కూర్పు", d: "పొడి గాజు మరియు ఎరుపు ఫాస్పరస్ మిశ్రమం.", ex: "అగ్గిపెట్టె పక్కన ఉండే గరుకు గీత." },
+      { t: "Soot Formation", te: "మసి ఏర్పడుట", d: "సరిగ్గా దహనం చెందని కార్బన్ కణాలు నల్లని పొరగా పేరుకుపోవడం.", ex: "దీపపు లాంతరు గాజు నల్లగా కావటం." },
+      { t: "Blue Zone Efficiency", te: "నీలి రంగు వలయ సామర్థ్యం", d: "సంపూర్ణ దహనం జరిగి అత్యధిక ఉష్ణాన్ని ఇచ్చే మంట భాగం.", ex: "గ్యాస్ స్టవ్ మంట నీలంగా మరగడం." },
+      { t: "Yellow Luminous Efficiency", te: "పసుపు ప్రకాశవంత వలయం", d: "వెలుతురును ఇచ్చే కానీ తక్కువ వేడిని ఇచ్చే మధ్య మంట భాగం.", ex: "కొవ్వొత్తి పసుపు మంట." },
+      { t: "Ignition Point Concept", te: "జ్వలన స్థాన భావన", d: "మంట అంటుకోవడానికి ప్రతి పదార్థానికి ఉండవలసిన కనీస ఉష్ణోగ్రత హద్దు.", ex: "పదార్థాల మధ్య మంట అంటుకునే వేగం." },
+      { t: "Environmental Preservation", te: "పర్యావరణ పరిరక్షణ", d: "కాలుష్యాన్ని తగ్గించి చెట్లు, జంతువులను కాపాడుకునే సామూహిక బాధ్యత.", ex: "పొగ తక్కువగా వచ్చే ఇంధనాలను వాడటం." },
+      { t: "Energy Sustainability", te: "శక్తి సుస్థిరత", d: "భవిష్యత్ తరాలకు ఇంధన కొరత రాకుండా వనరులను విచక్షణతో వాడటం.", ex: "సూర్యరశ్మిని శక్తిగా మార్చుకోవడం." },
+      { t: "Combustion Efficiency", te: "దహన సామర్థ్యం", d: "ఇంధనం పూర్తిగా మండి వృధా కాకుండా గరిష్ట ఉష్ణ శక్తిని విడుదల చేయడం.", ex: "ఆధునిక బర్నర్ల ద్వారా వంట గ్యాస్ ఆదా కావడం." }
+    ];
+
+    function buildEightyPoints() {
+      const container = document.getElementById('eightyPointsContainer');
+      container.innerHTML = '';
+      masterConceptsCombustion.forEach((c, idx) => {
+        const card = document.createElement('div');
+        card.className = "concept-card bg-white p-5 rounded-3xl border-2 border-slate-200 shadow-sm hover:border-orange-500 hover:shadow-md transition space-y-2.5";
+        card.innerHTML = `
+          <div class="flex items-center justify-between">
+            <span class="w-8 h-8 rounded-full bg-orange-600 text-white font-black flex items-center justify-center text-xs">${idx + 1}</span>
+            <button onclick="readAloud('${c.t}. ${c.te}')" title="Pronounce Point" class="text-slate-400 hover:text-orange-600 text-sm">
+              <i class="fa-solid fa-volume-high"></i>
+            </button>
+          </div>
+          <h4 class="font-black text-sm text-slate-900">${c.t}</h4>
+          <h5 class="font-extrabold text-sm text-orange-700 telugu-font">${c.te}</h5>
+          <p class="text-xs text-slate-600 telugu-font leading-relaxed">${c.d}</p>
+          <div class="p-3 bg-orange-50/50 rounded-xl border border-orange-200 text-xs text-slate-700 telugu-font">
+            <strong class="text-orange-700 font-sans uppercase font-black">ఉదాహరణ:</strong> ${c.ex}
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    /* =====================================================================
+       3. 80 GLOSSARY TERMS WITH BILINGUAL SENTENCES
+       ===================================================================== */
+    const masterGlossaryCombustion = [
+      { w: "Combustion", te: "దహనము", enEx: "Combustion is a chemical reaction that releases heat and light.", teEx: "దహనం అనేది ఉష్ణం మరియు కాంతిని వెలువరించే రసాయన చర్య." },
+      { w: "Combustible", te: "దహనశీల", enEx: "Dry paper and dry wood are highly combustible materials.", teEx: "ఎండిన కాగితం మరియు ఎండిన కట్టెలు అత్యంత దహనశీల పదార్థాలు." },
+      { w: "Non-combustible", te: "దహనశీల కాని", enEx: "Stones and water are completely non-combustible substances.", teEx: "రాళ్ళు మరియు నీరు పూర్తిగా దహనశీల కాని పదార్థాలు." },
+      { w: "Ignition temperature", te: "జ్వలన ఉష్ణోగ్రత", enEx: "Each material has a specific ignition temperature to start burning.", teEx: "ప్రతి పదార్థానికి మంటనందుకునే నిర్దిష్ట జ్వలన ఉష్ణోగ్రత ఉంటుంది." },
+      { w: "Inflammable", te: "అత్యంత దహనశీల", enEx: "Petrol tankers display inflammable warning signs to prevent accidents.", teEx: "ప్రమాదాలను నివారించడానికి పెట్రోల్ ట్యాంకర్లపై అత్యంత దహనశీల హెచ్చరికలు ఉంటాయి." },
+      { w: "Rapid combustion", te: "శీఘ్ర దహనము", enEx: "Cooking gas undergoes rapid combustion when ignited with a match.", teEx: "అగ్గిపుల్ల వెలిగించగానే వంట గ్యాస్ శీఘ్ర దహనానికి గురవుతుంది." },
+      { w: "Spontaneous combustion", te: "స్వయం దహనము", enEx: "Forest dry grass can undergo spontaneous combustion under scorching heat.", teEx: "మండే ఎండ వేడికి అడవిలోని ఎండుగడ్డి స్వయం దహనానికి గురికావచ్చు." },
+      { w: "Explosion", te: "స్ఫోటనము (పేలుడు)", enEx: "Igniting a cracker triggers a sudden explosion releasing gas and sound.", teEx: "టపాసు వెలిగిస్తే వాయువు మరియు శబ్దంతో కూడిన ఆకస్మిక పేలుడు సంభవిస్తుంది." },
+      { w: "Fuel", te: "ఇంధనము", enEx: "Wood, coal, and LPG serve as domestic and industrial fuels.", teEx: "కట్టెలు, బొగ్గు మరియు ఎల్‌పీజీ గృహోపయోగ, పారిశ్రామిక ఇంధనాలుగా పనిచేస్తాయి." },
+      { w: "Calorific value", te: "కెలోరిఫిక్ విలువ", enEx: "Hydrogen boasts the highest calorific value among all known fuels.", teEx: "తెలిసిన అన్ని ఇంధనాలలోకెల్లా హైడ్రోజన్ అత్యధిక కెలోరిఫిక్ విలువ కలిగి ఉంది." },
+      { w: "Flame", te: "మంట", enEx: "Vaporized wax burns brightly to form a distinct yellow and blue flame.", teEx: "ఆవిరైన మైనం ప్రకాశవంతంగా మండి స్పష్టమైన పసుపు మరియు నీలి రంగు మంటను ఇస్తుంది." },
+      { w: "Dark zone", te: "చీకటి వలయము", enEx: "The innermost dark zone of a candle flame contains unburnt wax vapours.", teEx: "కొవ్వొత్తి మంటలోని అంతర్గత చీకటి వలయంలో మందని మైనపు ఆవిర్లు ఉంటాయి." },
+      { w: "Luminous zone", te: "కాంతివంతమైన వలయము", enEx: "Incomplete combustion in the luminous zone produces black carbon soot.", teEx: "కాంతివంతమైన వలయంలో జరిగే అసంపూర్ణ దహనం నల్లటి కార్బన్ మసిని ఇస్తుంది." },
+      { w: "Non-luminous zone", te: "కాంతిహీన వలయము", enEx: "The outermost non-luminous blue zone is the hottest part of the flame.", teEx: "బహిర్నామక కాంతిహీన నీలి రంగు వలయమే మంటలో అత్యంత వేడైన భాగం." },
+      { w: "Fire extinguisher", te: "అగ్నిమాపక యంత్రం", enEx: "Schools and offices maintain carbon dioxide fire extinguishers for safety.", teEx: "పాఠశాలలు మరియు కార్యాలయాలు భద్రత కోసం కార్బన్ డై ఆక్సైడ్ అగ్నిమాపకాలను ఉంచుతాయి." },
+      { w: "Oxygen", te: "ఆక్సిజన్", enEx: "Atmospheric oxygen is the vital gas that sustains all combustion processes.", teEx: "దహన ప్రక్రియలన్నింటినీ నిలబెట్టే ముఖ్యమైన వాయువు వాతావరణ ఆక్సిజన్." },
+      { w: "Carbon dioxide", te: "కార్బన్ డై ఆక్సైడ్", enEx: "Carbon dioxide blankets electrical fires to cut off oxygen supply.", teEx: "కార్బన్ డై ఆక్సైడ్ విద్యుత్ మంటలపై కంబళిలా పరుచుకుని ఆక్సిజన్‌ను అడ్డుకుంటుంది." },
+      { w: "Potassium permanganate", te: "పొటాషియం పర్మాంగనేట్", enEx: "Heating potassium permanganate in a test tube liberates pure oxygen gas.", teEx: "పక్ష నాళికలో పొటాషియం పర్మాంగనేట్ వేడి చేస్తే స్వచ్ఛమైన ఆక్సిజన్ వస్తుంది." },
+      { w: "Incense stick", te: "అగరుబత్తి", enEx: "A glowing incense stick relights brightly in the presence of released oxygen.", teEx: "విడుదలైన ఆక్సిజన్ సమక్షంలో ఎర్రగా కాలుతున్న అగరుబత్తి తేజస్సుతో వెలుగుతుంది." },
+      { w: "Magnifying glass", te: "బిళ్ళ లెన్స్ (మ్యాగ్నిఫైయింగ్ గ్లాస్)", enEx: "Sunlight focused through a magnifying glass can easily ignite dry paper.", teEx: "బిళ్ళ లెన్స్ ద్వారా కేంద్రీకృతమైన ఎండ కాగితాన్ని సులభంగా మండిస్తుంది." },
+      { w: "Paper vessel", te: "కాగితపు పాత్ర", enEx: "Water inside a paper cup absorbs heat, preventing the paper vessel from burning.", teEx: "కాగితపు కప్పులోని నీరు వేడిని పీల్చుకోవడం వల్ల కప్పు కందకుండా ఉంటుంది." },
+      { w: "Antimony trisulphide", te: "యాంటిమోని ట్రిసల్ఫైడ్", enEx: "Safety matchstick heads contain antimony trisulphide and potassium chlorate.", teEx: "సేఫ్టీ అగ్గిపుల్ల తలపై యాంటిమోని ట్రిసల్ఫైడ్ మరియు పొటాషియం క్లోరేట్ ఉంటాయి." },
+      { w: "Red phosphorus", te: "ఎరుపు ఫాస్పరస్", enEx: "Red phosphorus is coated on the rough rubbing surface of safety match boxes.", teEx: "సేఫ్టీ అగ్గిపెట్టె గరుకు గీతపై ఎరుపు ఫాస్పరస్ పూయబడి ఉంటుంది." },
+      { w: "White phosphorus", te: "తెల్ల ఫాస్పరస్", enEx: "White phosphorus catches fire spontaneously when exposed to room air.", teEx: "తెల్ల ఫాస్పరస్ గది గాలికి తగలగానే స్వయంగా మంటలంటుకుంటుంది." },
+      { w: "Blowpipe", te: "బ్లో పైప్ (నూలు గొట్టం)", enEx: "Goldsmiths use a blowpipe to direct the hottest blue flame onto precious metals.", teEx: "స్వర్ణాకారులు అత్యంత వేడైన నీలి మంటను లోహాలపై ప్రసరింపజేయడానికి బ్లో పైప్ వాడతారు." },
+      { w: "Thermal energy", te: "ఉష్ణ శక్తి", enEx: "Combustion of high calorific fuels releases tremendous thermal energy.", teEx: "అధిక కెలోరిఫిక్ విలువ గల ఇంధనాల దహనం అపారమైన ఉష్ణ శక్తిని ఇస్తుంది." },
+      { w: "Moisture", te: "తేమ (నీటి ఆవిరి)", enEx: "Moisture in green leaves delays their ignition and prevents smooth burning.", teEx: "పచ్చి ఆకులలోని తేమ వాటి జ్వలనాన్ని ఆలస్యం చేసి సాఫీగా మందకుండా చేస్తుంది." },
+      { w: "Soot", te: "మసి", enEx: "Incomplete combustion deposits black soot particles on cooking vessels.", teEx: "అసంపూర్ణ దహనం వల్ల వంట పాత్రల అడుగున నల్లటి మసి పేరుకుపోతుంది." },
+      { w: "Vaporisation", te: "ఆవిరిభవనం", enEx: "Solid wax undergoes vaporisation before forming a luminous flame.", teEx: "ఘన రూపంలోని మైనం ప్రకాశవంతమైన మంటను ఇవ్వడానికి ముందు ఆవిరిగా మారుతుంది." },
+      { w: "Charcoal", te: "చార్‌కోల్", enEx: "Charcoal burns without a flame because it does not form vapour.", teEx: "చార్‌కోల్ ఎటువంటి ఆవిరిని ఇవ్వదు కాబట్టి అది మంట లేకుండా మండుతుంది." },
+      { w: "Spark", te: "స్పార్క్ (నిప్పు రవ్వ)", enEx: "A tiny electrical spark can ignite inflammable solvent vapours.", teEx: "చిన్న విద్యుత్ స్పార్క్ దహనశీల ద్రావక ఆవిర్లను మండిస్తుంది." },
+      { w: "Ash", te: "బూడిద", enEx: "Burning wood leaves behind a residual grey ash containing mineral oxides.", teEx: "కట్టెలు కాలిన తర్వాత ఖనిజ ఆక్సైడ్లతో కూడిన బూడిద మిగులుతుంది." },
+      { w: "Smoke", te: "పొగ", enEx: "Incomplete combustion of low-grade fuels generates thick grey smoke.", teEx: "నాణ్యత లేని ఇంధనాల అసంపూర్ణ దహనం దట్టమైన బూడిద పొగను సృష్టిస్తుంది." },
+      { w: "Fire hazard", te: "అగ్నిప్రమాద ముప్పు", enEx: "Improper electrical wiring poses a serious fire hazard in commercial buildings.", teEx: "సరికాని విద్యుత్ వైరింగ్ వాణిజ్య భవనాలలో తీవ్ర అగ్నిప్రమాద ముప్పును తెస్తుంది." },
+      { w: "Fire triangle", te: "అగ్ని త్రిభుజం", enEx: "Fuel, oxygen, and heat constitute the three essential sides of the fire triangle.", teEx: "ఇంధనం, ఆక్సిజన్ మరియు ఉష్ణం అగ్ని త్రిభుజంలోని మూడు ముఖ్యమైన భుజాలు." },
+      { w: "Combustion chamber", te: "దహన గది (చాంబర్)", enEx: "Automobile engines feature combustion chambers where petrol vapour burns.", teEx: "కారు ఇంజిన్లలో పెట్రోల్ ఆవిరి మందే దహన గదులు ఉంటాయి." },
+      { w: "Calorimeter", te: "కెలోరిమీటర్", enEx: "A calorimeter measures the exact amount of heat liberated during fuel burning.", teEx: "ఇంధనం మండుతున్నప్పుడు విడుదలయ్యే ఉష్ణ పరిమాణాన్ని కెలోరిమీటర్ కొలుస్తుంది." },
+      { w: "Greenhouse effect", te: "హరితగృహ ప్రభావం", enEx: "Carbon dioxide from fossil fuel combustion intensifies the greenhouse effect.", teEx: "శిలాజ ఇంధనాల దహనం వల్ల వచ్చే కార్బన్ డై ఆక్సైడ్ హరితగృహ ప్రభావాన్ని పెంచుతుంది." },
+      { w: "Air supply", te: "గాలి సరఫరా", enEx: "Adjustable vents on gas stoves regulate air supply for efficient burning.", teEx: "గ్యాస్ స్టవ్‌లపై ఉండే సర్దుబాటు రంధ్రాలు సమర్థవంతమైన దహనానికి గాలి సరఫరాను నియంత్రిస్తాయి." },
+      { w: "Fire alarm", te: "అగ్ని ప్రమాద హెచ్చరిక", enEx: "Sensitive smoke detectors trigger the building fire alarm during emergencies.", teEx: "సున్నితమైన స్మోక్ డిటెక్టర్లు అత్యవసర సమయంలో బిల్డింగ్ ఫైర్ అలారమ్‌ను మోగిస్తాయి." },
+      { w: "Firefighter", te: "అగ్నిమాపక సిబ్బంది", enEx: "Brave firefighters risked their lives to extinguish the massive warehouse fire.", teEx: "ధైర్యవంతులైన అగ్నిమాపక సిబ్బంది పెద్ద గోడౌన్ మంటలను ఆర్పడానికి తమ ప్రాణాలను పణంగా పెట్టారు." },
+      { w: "Combustible gas", te: "మందే వాయువు", enEx: "Coal gas and biogas are excellent examples of combustible fuel gases.", teEx: "కోల్ గ్యాస్ మరియు బయోగ్యాస్ మండే స్వభావం గల ఇంధన వాయువులకు అద్భుతమైన ఉదాహరణలు." },
+      { w: "Thermal efficiency", te: "ఉష్ణ సామర్థ్యం", enEx: "High calorific fuels generally exhibit superior thermal efficiency for cooking.", teEx: "అధిక కెలోరిఫిక్ విలువ గల ఇంధనాలు వంట చేయడానికి అత్యుత్తమ ఉష్ణ సామర్థ్యాన్ని చూపుతాయి." },
+      { w: "Volatile liquid", te: "బాష్పశీల ద్రవం", enEx: "Petrol is a highly volatile liquid that vaporizes instantly at room temperature.", teEx: "పెట్రోల్ అనేది గది ఉష్ణోగ్రత వద్ద తక్షణమే ఆవిరైపోయే అత్యంత బాష్పశీల ద్రవం." },
+      { w: "Fire blanket", te: "అగ్నిమాపక దుప్పటి", enEx: "Wrapping a person in a fire blanket starves the burning clothing of oxygen.", teEx: "మంటలంటుకున్న వ్యక్తికి అగ్నిమాపక దుప్పటి కప్పి ఆక్సిజన్ అందకుండా ఆపవచ్చు." },
+      { w: "Foam extinguisher", te: "ఫోమ్ ఎక్స్‌టింగ్విషర్", enEx: "Foam extinguishers form a smothering blanket over burning liquid chemical spills.", teEx: "మండే రసాయన ద్రవాల పైన ఫోమ్ ఎక్స్‌టింగ్విషర్లు గాలిని కప్పివేసే కంబళిని ఏర్పరుస్తాయి." },
+      { w: "Matchbox", te: "అగ్గిపెట్టె", enEx: "Safety matchboxes are engineered with specialized red phosphorus friction strips.", teEx: "సేఫ్టీ అగ్గిపెట్టెలు ప్రత్యేక ఎరుపు ఫాస్పరస్ రాపిడి గీతలతో తయారుచేయబడతాయి." },
+      { w: "Spontaneous ignition", te: "స్వయం జ్వలనము", enEx: "Oily rags left piled in warm sunlight can undergo spontaneous ignition.", teEx: "వెచ్చని ఎండలో కుప్పగా వేసిన నూనె గుడ్డలు స్వయం జ్వలనానికి గురికావచ్చు." },
+      { w: "Thermal radiation", te: "ఉష్ణ వికిరణము", enEx: "Standing close to a roaring campfire exposes skin to intense thermal radiation.", teEx: "పెద్ద మంటకు దగ్గరగా నిలబడితే చర్మానికి తీవ్రమైన ఉష్ణ వికిరణం తగులుతుంది." },
+      { w: "Complete oxidation", te: "సంపూర్ణ ఆక్సీకరణం", enEx: "Complete oxidation of carbon yields harmless carbon dioxide gas.", teEx: "కార్బన్ సంపూర్ణ ఆక్సీకరణం చెంది హాని లేని కార్బన్ డై ఆక్సైడ్‌ను ఇస్తుంది." },
+      { w: "Oxidizing agent", te: "ఆక్సీకరణ కారకం", enEx: "Potassium chlorate acts as an internal oxidizing agent inside match heads.", teEx: "పొటాషియం క్లోరేట్ అగ్గిపుల్ల తలలో అంతర్గత ఆక్సీకరణ కారకంలా పనిచేస్తుంది." },
+      { w: "Chemical energy", te: "రసాయన శక్తి", enEx: "Chemical energy stored within fossil fuels is converted into heat upon burning.", teEx: "శిలాజ ఇంధనాలలో నిక్షిప్తమైన రసాయన శక్తి మంటల ద్వారా ఉష్ణ శక్తిగా మారుతుంది." },
+      { w: "Thermal decomposition", te: "ఉష్ణ విచ్ఛిన్నం", enEx: "Heating potassium permanganate causes thermal decomposition releasing oxygen.", teEx: "పొటాషియం పర్మాంగనేట్ వేడి చేస్తే ఉష్ణ విచ్ఛిన్నం చెంది ఆక్సిజన్ వెలువడుతుంది." },
+      { w: "Hydrocarbon fuel", te: "హైడ్రోకార్బన్ ఇంధనం", enEx: "Most common commercial fuels consist of various hydrocarbon compounds.", teEx: "సాధారణ వాణిజ్య ఇంధనాలన్నీ వివిధ హైడ్రోకార్బన్ సమ్మేళనాలతో కూడి ఉంటాయి." },
+      { w: "Exothermic reaction", te: "ఉష్ణస్రవ చర్య (ఎక్సోథర్మిక్)", enEx: "Combustion is fundamentally an exothermic reaction radiating intense heat.", teEx: "దహనం అనేది ప్రాథమికంగా తీవ్రమైన ఉష్ణాన్ని వెలువరించే ఉష్ణస్రవ చర్య." },
+      { w: "Ignition point", te: "జ్వలన స్థానం", enEx: "Friction raises the match head temperature right up to its ignition point.", teEx: "రాపిడి అగ్గిపుల్ల తల ఉష్ణోగ్రతను దాని జ్వలన స్థానం వరకు తీసుకువెళ్తుంది." },
+      { w: "Air entrainment", te: "గాలి ప్రవేశం", enEx: "Proper burner design ensures smooth air entrainment for stable blue flames.", teEx: "సరైన బర్నర్ డిజైన్ స్థిరమైన నీలి మంటల కోసం గాలి సక్రమంగా ప్రవేశించేలా చేస్తుంది." },
+      { w: "Unburnt carbon", te: "మందని కార్బన్ కణాలు", enEx: "Luminous flames produce glowing unburnt carbon particles that radiate yellow light.", teEx: "కాంతివంతమైన మంటలు పసుపు కాంతిని వెలువరించే మెరిసే మందని కార్బన్ కణాలను ఇస్తాయి." },
+      { w: "Gaseous state", te: "వాయు స్థితి", enEx: "Liquid fuels must enter a gaseous state before sustaining a visible flame.", teEx: "ద్రవ ఇంధనాలు స్పష్టమైన మంటను ఇవ్వడానికి ముందు వాయు స్థితిలోకి మారాలి." },
+      { w: "Solid fuel", te: "ఘన ఇంధనం", enEx: "Wood and coal represent traditional solid fuels utilized across villages.", teEx: "కట్టెలు మరియు బొగ్గు గ్రామీణ ప్రాంతాలలో వాడే సాంప్రదాయ ఘన ఇంధనాలు." },
+      { w: "Liquid fuel", te: "ద్రవ ఇంధనం", enEx: "Petrol and diesel are premier liquid fuels powering modern road transport.", teEx: "పెట్రోల్ మరియు డీజిల్ ఆధునిక రోడ్డు రవాణాను నడిపే ప్రముఖ ద్రవ ఇంధనాలు." },
+      { w: "Gaseous fuel", te: "వాయు ఇంధనం", enEx: "LPG and natural gas are efficient gaseous fuels supplied via pipelines.", teEx: "ఎల్‌పీజీ మరియు సహజ వాయువు పైప్‌లైన్ ద్వారా సరఫరా అయ్యే సమర్థవంతమైన వాయు ఇంధనాలు." },
+      { w: "Combustion rate", te: "దహన వేగం", enEx: "The combustion rate determines whether a fire develops slowly or as an explosion.", teEx: "మంట నెమ్మదిగా వ్యాపించాలా లేదా పేలుడు జరగాలా అనేది దహన వేగం నిర్ణయిస్తుంది." },
+      { w: "Fire safety", te: "అగ్ని భద్రత", enEx: "Strict adherence to fire safety codes prevents industrial disasters.", teEx: "అగ్ని భద్రతా నియమాలను కఠినంగా పాటించడం వల్ల పారిశ్రామిక ప్రమాదాలు నివారించబడతాయి." },
+      { w: "Heat dissipation", te: "ఉష్ణ విసర్జన", enEx: "Water containers facilitate rapid heat dissipation protecting paper from fire.", teEx: "నీటి పాత్రలు ఉష్ణాన్ని వేగంగా విసర్జించి కాగితాన్ని మంట నుండి కాపాడుతాయి." },
+      { w: "Oxidation process", te: "ఆక్సీకరణ ప్రక్రియ", enEx: "Oxidation of fuels releases trapped solar energy in the form of fire.", teEx: "ఇంధనాల ఆక్సీకరణం బంధించిన సౌరశక్తిని అగ్ని రూపంలో విడుదల చేస్తుంది." },
+      { w: "Combustible vapor", te: "దహనశీల ఆవిరి", enEx: "Hot wax vapors rise through the wick to feed the candle flame.", teEx: "వేడైన మైనపు ఆవిర్లు ఒత్తి గుండా పైకి వచ్చి కొవ్వొత్తి మంటను పోషిస్తాయి." },
+      { w: "Calorific efficiency", te: "కెలోరిఫిక్ సామర్థ్యం", enEx: "High calorific efficiency means less fuel is required to boil water.", teEx: "అధిక కెలోరిఫిక్ సామర్థ్యం అంటే నీరు మరిగించడానికి తక్కువ ఇంధనం సరిపోతుంది." },
+      { w: "Fire triangle elimination", te: "అగ్ని త్రిభుజ తొలగింపు", enEx: "Extinguishing methods work by targeting specific components of the fire triangle.", teEx: "అగ్నిమాపక పద్ధతులు అగ్ని త్రిభుజంలోని నిర్దిష్ట భాగాలను లక్ష్యంగా చేసుకుని పనిచేస్తాయి." },
+      { w: "Ignition mechanism", te: "జ్వలన యాంత్రిక విధానం", enEx: "Friction provides the ignition mechanism needed in safety matches.", teEx: "సేఫ్టీ అగ్గిపుల్లలకు రాపిడి అవసరమైన జ్వలన యాంత్రిక విధానాన్ని ఇస్తుంది." },
+      { w: "Combustion byproducts", te: "దహన ఉప ఉత్పన్నాలు", enEx: "Water vapour and carbon dioxide are harmless combustion byproducts of pure hydrogen.", teEx: "స్వచ్ఛమైన హైడ్రోజన్ దహనం వల్ల నీటి ఆవిరి మరియు కార్బన్ డై ఆక్సైడ్ హాని లేని ఉప ఉత్పన్నాలుగా వస్తాయి." },
+      { w: "Spontaneous forest blaze", te: "స్వయం అడవి కార్చిచ్చు", enEx: "Dry timber friction during high winds triggers spontaneous forest blazes.", teEx: "తీవ్రమైన ఈదురు గాలుల సమయంలో కట్టెల రాపిడి స్వయం అడవి కార్చిచ్చులకు దారితీస్తుంది." },
+      { w: "Flame temperature", te: "మంట ఉష్ణోగ్రత", enEx: "Different flame zones exhibit vastly varying localized flame temperatures.", teEx: "విభిన్న మంట వಲಯాలు అత్యంత భిన్నమైన స్థానిక ఉష్ణోగ్రతలను చూపుతాయి." },
+      { w: "Flame color", te: "మంట రంగు", enEx: "Flame color indicates the completeness of fuel oxidation and zone temperature.", teEx: "మంట రంగు ఇంధన ఆక్సీకరణ సంపూర్ణతను మరియు వలయ ఉష్ణోగ్రతను సూచిస్తుంది." },
+      { w: "Domestic cooking", te: "గృహ వంట", enEx: "LPG cylinders have modernized safe domestic cooking across Indian kitchens.", teEx: "ఎల్‌పీజీ సిలిండర్లు భారతీయ వంటగదులలో సురక్షితమైన గృహ వంటను ఆధునీకరించాయి." },
+      { w: "Industrial furnace", te: "పారిశ్రామిక కొలిమి", enEx: "Metallurgical furnaces rely on coke combustion for extreme heat generation.", teEx: "లోహ పరిశ్రమల కొలిమిలు అత్యధిక ఉష్ణోగ్రతల ఉత్పత్తి కోసం కోక్ దహనంపై ఆధారపడతాయి." },
+      { w: "Pollution reduction", te: "కాలుష్య నివారణ", enEx: "Transitioning to clean fuels is essential for global pollution reduction.", teEx: "స్వచ్ఛమైన ఇంధనాల వైపు మారడం ప్రపంచ కాలుష్య నివారణకు అత్యంత ముఖ్యం." },
+      { w: "Combustion science", te: "దహన శాస్త్రం", enEx: "Combustion science optimizes rocket propellant designs and domestic stoves alike.", teEx: "దహన శాస్త్రం రాకెట్ ఇంధన డిజైన్లను మరియు గృహోపయోగ స్టవ్‌లను ఒకేలా మెరుగుపరుస్తుంది." }
+    ];
+
+    function buildGlossary() {
+      const container = document.getElementById('glossaryContainer');
+      container.innerHTML = '';
+      masterGlossaryCombustion.forEach((g, idx) => {
+        const card = document.createElement('div');
+        card.className = "glossary-card bg-white p-5 rounded-3xl border-2 border-slate-200 shadow-sm hover:border-emerald-400 hover:shadow-md transition space-y-2.5";
+        card.innerHTML = `
+          <div class="flex items-center justify-between">
+            <span class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-900 font-black flex items-center justify-center text-xs">${idx + 1}</span>
+            <button onclick="readAloud('${g.w}. ${g.te}')" title="Pronounce" class="text-slate-400 hover:text-emerald-700 text-sm">
+              <i class="fa-solid fa-volume-high"></i>
+            </button>
+          </div>
+          <h4 class="font-black text-sm text-slate-900">${g.w}</h4>
+          <h5 class="font-extrabold text-sm text-emerald-700 telugu-font">${g.te}</h5>
+          <div class="p-3 bg-slate-50 rounded-xl text-xs text-slate-700 space-y-1.5 border border-slate-200 leading-relaxed">
+            <p><strong>EN:</strong> ${g.enEx}</p>
+            <p class="telugu-font text-slate-950"><strong>తెలుగు:</strong> ${g.teEx}</p>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    /* =====================================================================
+       4. CONTENT SEARCH & FILTERING
+       ===================================================================== */
+    function filterContent() {
+      const q = document.getElementById('universalSearchInput').value.toLowerCase().trim();
+      const cards = document.querySelectorAll('.concept-card, .glossary-card, .page-block, .exercise-item');
+
+      cards.forEach(card => {
+        const text = card.innerText.toLowerCase();
+        if (text.includes(q)) {
+          card.style.display = "";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    }
+
+    function toggleLang(mode) {
+      const btnBoth = document.getElementById('btnBoth');
+      const btnEn = document.getElementById('btnEn');
+      const btnTe = document.getElementById('btnTe');
+
+      [btnBoth, btnEn, btnTe].forEach(b => {
+        b.className = "px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800";
+      });
+
+      const enElements = document.querySelectorAll('.lang-en');
+      const teElements = document.querySelectorAll('.lang-te');
+
+      if (mode === 'both') {
+        btnBoth.className = "px-3.5 py-2 rounded-xl bg-orange-600 text-white shadow-xs";
+        enElements.forEach(el => el.classList.remove('hidden'));
+        teElements.forEach(el => el.classList.remove('hidden'));
+      } else if (mode === 'en') {
+        btnEn.className = "px-3.5 py-2 rounded-xl bg-orange-600 text-white shadow-xs";
+        enElements.forEach(el => el.classList.remove('hidden'));
+        teElements.forEach(el => el.classList.add('hidden'));
+      } else if (mode === 'te') {
+        btnTe.className = "px-3.5 py-2 rounded-xl bg-orange-600 text-white shadow-xs";
+        enElements.forEach(el => el.classList.add('hidden'));
+        teElements.forEach(el => el.classList.remove('hidden'));
+      }
+    }
+
+    /* =====================================================================
+       5. AUDIO SYNTHESIS
+       ===================================================================== */
+    function readAloud(text) {
+      if (!('speechSynthesis' in window)) return;
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.rate = 0.92;
+      utterance.pitch = 1.0;
+      window.speechSynthesis.speak(utterance);
+    }
+
+    /* =====================================================================
+       6. SCROLL-TO-TOP & SPY
+       ===================================================================== */
+    initScrollSpy();
+    function initScrollSpy() {
+      const btn = document.getElementById('backToTopBtn');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 400) {
+          btn.classList.remove('translate-y-20', 'opacity-0');
+          btn.classList.add('translate-y-0', 'opacity-100');
+        } else {
+          btn.classList.add('translate-y-20', 'opacity-0');
+          btn.classList.remove('translate-y-0', 'opacity-100');
+        }
+      });
+    }
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
